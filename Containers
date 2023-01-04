@@ -1,0 +1,486 @@
+  /* All the Dumb Paper */
+  
+  .paper :is(h1, h2, h3, h4, h5) {
+      margin-top: 0px;
+      margin-bottom: 2px;
+      padding-top: 0px;
+      border: 0px solid;
+      background-image: linear-gradient(
+          to right,
+          #1f1d22 0%,
+          #1f1d22 100%
+      );
+      text-shadow: none !important;
+  }
+  
+  .paper-dark :is(h1, h2, h3, h4, h5) {
+      margin-top: 0px;
+      margin-bottom: 2px;
+      padding-top: 0px;
+      border: 0px solid;
+      background-image: linear-gradient(
+          to right,
+          #b2b2b2 0%,
+          #b2b2b2 100%
+      );
+      text-shadow: none !important;
+  }
+  
+  .paper {
+      color: black !important;
+      font-size: 20px;
+      text-shadow: 1px 1px 2px rgba(200, 200, 200, 0.8);
+  }
+  
+  
+  .paper-light {
+      color: black !important;
+      font-size: 20px;
+      text-shadow: 1px 1px 2px rgba(100, 100, 100, 0.9);
+  }
+  
+  .paper-tan {
+      color: black !important;
+      font-size: 20px;
+      text-shadow: 1px 1px 2px rgba(100, 100, 100, 0.9);
+  }
+  
+  .paper-red {
+      color: #000000 !important;
+      font-size: 20px;
+      text-shadow: 1px 1px 2px rgba(106, 48, 48, 0.8);
+  }
+  
+  .paper-dark {
+      color: #b2b2b2 !important;
+      font-size: 20px;
+      text-shadow: 1px 1px 2px rgba(200, 200, 200, 0.5);
+  }
+  
+  /* 300 by 200 */
+  
+  .paper-light-300-200 {
+      width: 300px;
+      height: 200px;
+      background: url(https://www.worldanvil.com/uploads/images/f0ffbf4e19ea2f405f6d94a29d2eb32c.png);
+      padding: 16px;  
+     overflow: auto;
+  }
+  
+  .paper-tan-300-200 {
+      width: 300px;
+      height: 200px;
+      background: url(https://www.worldanvil.com/uploads/images/54996a5e8e9180abdc752c6e8b086585.png);
+      padding: 16px;
+      overflow: auto;
+  }
+  
+  /* 400 by 400 */
+  
+  .paper-tan-400-400 {
+      width: 400px;
+      height: 400px;
+      background: url(https://www.worldanvil.com/uploads/images/e6dffa9dfd347f59d130df5405a83fc0.png);
+      padding: 16px;
+      overflow: auto;
+
+  }
+  
+  .paper-red-400-400 {
+      width: 400px;
+      height: 400px;
+      background: url(https://www.worldanvil.com/uploads/images/4f76fa6073e8968106dee98d35300437.png);
+      padding: 16px;
+      overflow: auto;
+  }
+  
+  /* 400 by 600 */
+  
+  .paper-light-400-600 {
+      width: 400px;
+      height: 600px;
+      background: url(https://www.worldanvil.com/uploads/images/772d1d8946751dc63cdd8f965a8d9a77.png);
+      padding: 16px;
+      overflow: auto;
+  }
+  
+  .paper-dark-400-600 {
+      width: 400px;
+      height: 600px;
+      background: url(https://www.worldanvil.com/uploads/images/4ae3c49958348835ad738afcbce0461d.png);
+      padding: 16px;
+      overflow: auto;
+  }
+  
+  /* 800 by 250 */
+  
+  .paper-light-800-250 {
+      width: 800px;
+      height: 250px;
+      background: url(https://www.worldanvil.com/uploads/images/8d40bc747c74e6f27352bf0374739129.png);
+      padding: 16px;
+      overflow: auto;
+  }
+  
+  .paper-red-800-250 {
+      width: 800px;
+      height: 250px;
+      background: url(https://www.worldanvil.com/uploads/images/b7a4bc68077bcf734def3a27d990158c.png);
+      padding: 16px;
+      overflow: auto;
+  }
+  
+  
+  /* 800 by 400 */
+  
+  .paper-light-800-400 {
+      width: 800px;
+      height: 400px;
+      background: url(https://www.worldanvil.com/uploads/images/3a3140c85c4743430385f5deb8563005.png);
+      padding: 16px;
+      overflow: auto;
+  }
+  
+  .paper-dark-800-400 {
+      width: 800px;
+      height: 400px;
+      background: url(https://www.worldanvil.com/uploads/images/23ddb5c7a1924c4aa655b6d058af6bdc.png);
+      padding: 16px;
+      overflow: auto;
+  }
+  
+  /* 1250 by 250 */
+  
+  .paper-light-1200-250 {
+      width: 1200px;
+      height: 250px;
+      background: url(https://www.worldanvil.com/uploads/images/41287327d123606ea52c4a6a309cc1e7.png);
+      padding: 32px;
+      margin-left: -45px;
+      overflow: auto;
+  }
+  
+  .paper-tan-1200-250 {
+      width: 1200px;
+      height: 250px;
+      background: url(https://www.worldanvil.com/uploads/images/a260f0622201171eddae3bd6e6a56e73.png);
+      padding: 32px;
+      margin-left: -45px;
+      overflow: auto;
+  }
+  
+  
+  /*
+  [class*=css-palette-trigger]:hover ~ #hidden-sidebar #css-palette-panel,
+  #css-palette-panel:hover{
+      width: 30% !important;
+  }
+  #hidden-sidebar:hover  ~ #full-layout .page-article,
+  [class*=css-palette-trigger]:hover ~ #full-layout .page-article{
+      width: 57%;
+  }
+  */
+
+  /* CONTAINERS*/
+ 
+.box-grid {
+    Background: transparent;
+    display: grid !important;
+    grid-auto-rows: minmax (0px, auto);
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px; 
+}
+
+.box-grid-full {
+    Background: transparent;
+    display: grid !important;
+    grid-auto-rows: minmax (0px, auto);
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px; 
+}
+
+.box-grid-four {
+    Background: transparent;
+    display: grid !important;
+    grid-auto-rows: minmax (0px, auto);
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px; 
+}
+
+  .box-ceie {
+      padding: 12px;
+      background: #1d0e2495;
+      border: 2px groove #15091c;
+      border-radius: 15px 15px 15px 15px;
+      box-shadow: 2px 2px 2px #04050475 inset, 
+            5px 5px 2px #04050475;
+  } 
+
+
+    .box-ink {
+      padding: 12px;
+      background: #2d2d2d;
+      border: 2px groove #090909;
+      border-radius: 15px 15px 15px 15px;
+      box-shadow: 2px 2px 2px #04050475 inset, 
+            5px 5px 2px #04050475;
+  }
+  
+
+  .box-zumren {
+      padding: 12px;
+      background: #4a5b74;
+      border: 2px groove #0047ab;
+      box-shadow: 2px 2px 2px #04050475 inset, 
+            5px 5px 2px #04050475;
+      border-radius: 15px 15px 15px 15px;
+  }
+  
+  .box-fordave {
+      padding: 12px;
+      background: #904949;
+       border: 2px groove #900000;
+      box-shadow: 2px 2px 2px #04050475 inset, 
+            5px 5px 2px #04050475;
+      border-radius: 15px 15px 15px 15px;
+  }
+
+  .box-contain {
+    margin: 5px;
+    border-radius: 0px 15px 0px 15px;
+    padding: 10px;
+    background: transparent
+  }
+
+  .box-standard{
+      padding: 12px;
+      background: #151119;
+      border: 2px groove #15091c75;
+      box-shadow: 2px 2px 2px #04050475 inset, 
+            5px 5px 2px #04050475;
+      border-radius: 15px 15px 15px 15px;
+  }
+
+  .box-newspaper{
+      padding: 12px;
+      background: transparent;
+      column-count:2;
+      column-rule: 1px dashed white;
+}
+
+  .quote-author{
+      padding-right: 35px;
+      background: transparent;
+      text-align: right;
+      font-style: italic;
+      color: var(--TextColor);
+      font-size: 12 px;
+      display:block;
+}
+
+.box-header{
+      background: #151119;
+      border-left: 15px solid #15091c75;
+      border-right: 15px solid #15091c75;
+      border-radius: 10px 10px 10px 10px;
+      text-align: center;
+      text-transform: uppercase;
+  }
+
+
+  .box-anvil{
+      padding: 12px;
+      background: #5d5f6095;
+      border: 2px groove #4c5055;
+      box-shadow: 2px 2px 2px #04050475 inset, 
+            5px 5px 2px #04050475;
+      border-radius: 15px 15px 15px 15px;
+  }
+
+  .codeblock {
+    background-color: #111111;
+    color: #644b83;
+    border: none;
+    border-radius: 1em;
+    padding: 1em;
+    font-size: 14px;
+    box-shadow: 5px 5px 2px #04050475;
+}
+
+/*CARDS*/
+
+    .card-ceie {
+      margin: 0.5em;
+      padding: 0.5em;
+      background: #1d0e2495;
+      border: 1px solid #15091c;
+      border-radius: 15px 15px 15px 15px;
+      box-shadow: 2px 2px 2px #04050475 inset, 
+            5px 5px 2px #04050475;
+     word-wrap: break-word;
+      display: block;
+   }
+
+    .card-ink {
+       margin: 0.5em;
+      padding: 0.5em;
+      background: #2d2d2d;
+      border: 1px solid #090909;
+      border-radius: 15px 15px 15px 15px;
+      box-shadow: 2px 2px 2px #04050475 inset, 
+            5px 5px 2px #04050475;
+     word-wrap: break-word;
+     display: block;
+   }
+
+  .card-light {
+      margin: 0.5em;
+      padding: 0.5em;
+      background: #5d5f60;
+      border: 3px groove #7d7f76;
+      border-radius: 15px 15px 15px 15px;
+      box-shadow: 2px 2px 2px #04050475 inset, 
+            5px 5px 2px #04050475;
+     word-wrap: break-word;
+      display: block;
+  }
+
+
+  .card-anvil {
+      margin: 0.5em;
+      padding: 0.5em;
+      background: #5d5f6095;
+      border: 3px groove #4c5055;
+      border-radius: 15px 15px 15px 15px;
+      box-shadow: 2px 2px 2px #2a2e33 inset, 
+            5px 5px 2px #04050475;
+     word-wrap: break-word;
+      display: block;
+  }
+
+  .card-standard{
+      margin: 0.5em;
+      padding: 0.5em;
+      background: #15111995;
+      border: 2px groove #15091c50;
+      border-radius: 15px 15px 15px 15px;
+      box-shadow: 2px 2px 2px #04050475 inset, 
+            5px 5px 2px #04050475;
+     word-wrap: break-word;
+      display: block;
+  }
+
+  .card-fordave{
+       margin: 0.5em;
+      padding: 0.5em;
+      background: #904949;
+      border: 1px solid #900000;
+      border-radius: 15px 15px 15px 15px;
+      box-shadow: 2px 2px 2px #04050475 inset, 
+            5px 5px 2px #04050475;
+     word-wrap: break-word;
+      display: block;
+   }
+
+  .card-zumren{
+       margin: 0.5em;
+      padding: 0.5em;
+      background: #4a5b74;
+      border: 1px solid #0047ab;
+      border-radius: 15px 15px 15px 15px;
+      box-shadow: 2px 2px 2px #04050475 inset, 
+            5px 5px 2px #04050475;
+     word-wrap: break-word;
+      display: block;
+   }
+
+     /*PHRASE KEYS*/
+
+.user-css .card-light .phrase-key {
+     background: #04050450;
+     font-size: 18px;
+     margin: -8px;
+     padding: 6px;
+     border-radius: 5px 5px 0px 0px;
+     margin-bottom: 5px;
+     text-align: center;
+     font-weight: 700;
+}
+
+.user-css .card-ink .phrase-key {
+     background: #04050450;
+     font-size: 18px;
+     margin: -8px;
+     padding: 6px;
+     border-radius: 5px 5px 0px 0px;
+     margin-bottom: 5px;
+     text-align: center;
+     font-weight: 700;
+}
+
+.user-css .card-ceie .phrase-key {
+     background: #04050450;
+     font-size: 18px;
+     margin: -8px;
+     padding: 6px;
+     border-radius: 5px 5px 0px 0px;
+     margin-bottom: 5px;
+     text-align: center;
+     font-weight: 700;
+}
+
+.user-css .card-zumren .phrase-key {
+     background: #04050450;
+     font-size: 18px;
+     margin: -8px;
+     padding: 6px;
+     border-radius: 5px 5px 0px 0px;
+     margin-bottom: 5px;
+     text-align: center;
+     font-weight: 700;
+}
+
+.user-css .card-fordave .phrase-key {
+     background: #04050450;
+     font-size: 18px;
+     margin: -8px;
+     padding: 6px;
+     border-radius: 5px 5px 0px 0px;
+     margin-bottom: 5px;
+     text-align: center;
+     font-weight: 700;
+}
+
+
+ .user-css .card-anvil .phrase-key {
+     background: #04050450;
+     font-size: 18px;
+     margin: -8px;
+     padding: 6px;
+     border-radius: 15px 15px 0px 0px;
+     margin-bottom: 5px;
+     text-align: center;
+     font-weight: 700;
+}
+
+.user-css .box-contain .phrase-key {
+     background: #04050450;
+     font-size: 18px;
+     margin: -8px;
+     padding: 6px;
+     border-radius: 5px 5px 0px 0px;
+     margin-bottom: 5px;
+     text-align: center;
+     font-weight: 700;
+}
+
+.user-css .card-standard .phrase-key {
+     background: #04050450;
+     font-size: 18px;
+     margin: -8px;
+     padding: 6px;
+     border-radius: 5px 5px 0px 0px;
+     margin-bottom: 5px;
+     text-align: center;
+     font-weight: 700;
+}
