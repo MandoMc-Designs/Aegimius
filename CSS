@@ -834,6 +834,7 @@
   }
   */
 
+ 
   /* CONTAINERS*/
  
 .box-grid {
@@ -909,37 +910,35 @@
       box-shadow: 2px 2px 2px #04050475 inset, 
             5px 5px 2px #04050475;
 }
-  .box box-ceie {
+  .box-ceie {
       background: #1d0e2495;
       border: 2px groove #15091c;
   } 
 
 
-    .box box-ink {
+    .box-ink {
        background: #2d2d2d;
       border: 2px groove #090909;
   }
   
 
-  .box box-zumren {
+  .box-zumren {
       background: #4a5b74;
       border: 2px groove #0047ab;
   }
   
-  .box box-fordave {
-       border: 2px groove #900000;
-      box-shadow: 2px 2px 2px #04050475 inset, 
-            5px 5px 2px #04050475;
+  .box-fordave {
+      border: 2px groove #900000;
+      background: #904949;
    }
 
 
-  .box box-standard{
+  .box-standard{
       border: 2px groove #15091c75;
-      box-shadow: 2px 2px 2px #04050475 inset, 
-            5px 5px 2px #04050475;
+      background: 15111995;
   }
 
-  .box box-anvil{
+  .box-anvil{
       background: #5d5f6095;
       border: 2px groove #4c5055;
   }
@@ -1026,7 +1025,6 @@
      text-align: center;
      font-weight: 700;
 }
-
  
   /* Timeline */
   
