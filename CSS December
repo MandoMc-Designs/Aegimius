@@ -345,7 +345,7 @@
   
   /* Quote */
   .user-css-presentation blockquote,
-  .tooltipster-content blockquote {
+  .tooltipster-content blockquote, .user-css-map-sidebar blockquote {
       margin-top: 20px;
       background: var(--Blockquote);
       color: var(--TextColor);
@@ -833,95 +833,95 @@
       width: 57%;
   }
   */
-  
-  .box-beige {
+
+  /* CONTAINERS*/
+ 
+.box-grid {
+    Background: transparent;
+    display: grid !important;
+    grid-auto-rows: minmax (0px, auto);
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px; 
+}
+
+.box-grid-full {
+    Background: transparent;
+    display: grid !important;
+    grid-auto-rows: minmax (0px, auto);
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px; 
+}
+
+.box-grid-four {
+    Background: transparent;
+    display: grid !important;
+    grid-auto-rows: minmax (0px, auto);
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px; 
+}
+
+.box-grid-flex {
+     display: flex !important;
+     flex-wrap: wrap;
+     gap: 1em;
+}
+
+.box-grid-flex *{
+     flex: 1 1 15em;
+}
+
+  .box-ceie {
       padding: 12px;
-      background: #e1d2c2;
-      border: 1px solid #b89e7b;
-      border-left: 15px solid #b89e7b;
+      background: #1d0e2495;
+      border: 2px groove #15091c;
       border-radius: 15px 15px 15px 15px;
-      color: #3b331e; 
-  }
-  
-  .box-beige .paragraph-indent {
-      color: #3b331e; 
-  }
-  
-  
-  :is(.user-css, .user-css-extended, .tooltipster-content, .user-css-map-sidebar, .user-css .panel-default) .box-beige :is(h2, h3, h4, h5) {
-      margin-top: 20px;
-      margin-bottom: 8px;
-      color: #2c2615 !Important;
-      border-color: #2c2615;
-      border-image: none;
-      -webkit-background-clip: default;
-      margin-top: 0px;
-  }
-  
-  .box-ink {
+      box-shadow: 2px 2px 2px #04050475 inset, 
+            5px 5px 2px #04050475;
+  } 
+
+
+    .box-ink {
       padding: 12px;
       background: #2d2d2d;
-      border: 1px solid #090909;
-      border-left: 15px solid #090909;
-      border-radius: 15px 15px 15px 15px
+      border: 2px groove #090909;
+      border-radius: 15px 15px 15px 15px;
+      box-shadow: 2px 2px 2px #04050475 inset, 
+            5px 5px 2px #04050475;
   }
   
-  :is(.user-css, .user-css-extended, .tooltipster-content, .user-css-map-sidebar, .user-css .panel-default) .box-ink :is(h2, h3, h4, h5) {
-      margin-top: 20px;
-      margin-bottom: 8px;
-      color: white !Important;
-      border-color: white;
-      border-image: none;
-      -webkit-background-clip: default;
-      margin-top: 0px;
-  }
-  
- 
+
   .box-zumren {
       padding: 12px;
       background: #4a5b74;
-      border: 1px solid #0047ab;
-      border-left: 15px solid #0047ab;
-      border-radius: 15px 15px 15px 15px
+      border: 2px groove #0047ab;
+      box-shadow: 2px 2px 2px #04050475 inset, 
+            5px 5px 2px #04050475;
+      border-radius: 15px 15px 15px 15px;
   }
   
   .box-fordave {
       padding: 12px;
       background: #904949;
-      border: 1px solid #900000;
-      border-left: 15px solid #900000;
-      border-radius: 15px 15px 15px 15px
+       border: 2px groove #900000;
+      box-shadow: 2px 2px 2px #04050475 inset, 
+            5px 5px 2px #04050475;
+      border-radius: 15px 15px 15px 15px;
   }
-  
-  :is(.user-css, .user-css-extended, .tooltipster-content, .user-css-map-sidebar, .user-css .panel-default) .box-fordave :is(h2, h3, h4, h5) {
-      margin-top: 20px;
-      margin-bottom: 8px;
-      color: white !Important;
-      border-color: white;
-      border-image: none;
-      -webkit-background-clip: default;
-      margin-top: 0px;
-  }
-  
+
   .box-contain {
     margin: 5px;
     border-radius: 0px 15px 0px 15px;
     padding: 10px;
+    background: transparent
   }
 
   .box-standard{
       padding: 12px;
       background: #151119;
-      border: 1px solid rgba(21, 9, 28, 0.5);
-      border-left: 15px solid rgba(21, 9, 28, 0.5);
-      border-radius: 15px 15px 15px 15px
-  }
-  :is(.user-css, .user-css-extended, .tooltipster-content, .user-css-map-sidebar, .user-css .panel-default) .box-standard :is(h2, h3, h4, h5) {
-      margin-bottom: 8px;
-      border-color: white;
-      border-image: none;
-      -webkit-background-clip: default;
-      margin-top: 0px;
+      border: 2px groove #15091c75;
+      box-shadow: 2px 2px 2px #04050475 inset, 
+            5px 5px 2px #04050475;
+      border-radius: 15px 15px 15px 15px;
   }
 
   .box-newspaper{
@@ -943,41 +943,211 @@
 
 .box-header{
       background: #151119;
-      border-left: 15px solid #15091c50;
-      border-right: 15px solid 15091c50;
+      border-left: 15px solid #15091c75;
+      border-right: 15px solid #15091c75;
       border-radius: 10px 10px 10px 10px;
       text-align: center;
       text-transform: uppercase;
   }
 
-  :is(.user-css, .user-css-extended, .tooltipster-content, .user-css-map-sidebar, .user-css .panel-default) .box-header:is(h2, h3, h4, h5) {
-      margin-bottom: 8px;
-      border-color: white;
-      border-image: none;
-      -webkit-background-clip: default;
-      margin-top: 0px;
+
+  .box-anvil{
+      padding: 12px;
+      background: #5d5f6095;
+      border: 2px groove #4c5055;
+      box-shadow: 2px 2px 2px #04050475 inset, 
+            5px 5px 2px #04050475;
+      border-radius: 15px 15px 15px 15px;
   }
 
-.user-css .aegimius {
-     background: #5d5f60;
-     display: block;
-     padding 0.5em;
-     margin: 0.5em;
-     border-radius: 5px;
-     position: realative;
-     box-sizing:border-box;
-     color: white;
+  .codeblock {
+    background-color: #111111;
+    color: #644b83;
+    border: none;
+    border-radius: 1em;
+    padding: 1em;
+    font-size: 14px;
+    box-shadow: 5px 5px 2px #04050475;
 }
 
-.user-css .aegimius .phrase-key {
-     background: #4c5055;
-     font-size: 18px
-     margin: -8px
-     padding: 10px;
+/*CARDS*/
+
+    .card-ceie {
+      margin: 0.5em;
+      padding: 0.5em;
+      background: #1d0e2495;
+      border: 1px solid #15091c;
+      border-radius: 15px 15px 15px 15px;
+      box-shadow: 2px 2px 2px #04050475 inset, 
+            5px 5px 2px #04050475;
+     word-wrap: break-word;
+      display: block;
+   }
+
+    .card-ink {
+       margin: 0.5em;
+      padding: 0.5em;
+      background: #2d2d2d;
+      border: 1px solid #090909;
+      border-radius: 15px 15px 15px 15px;
+      box-shadow: 2px 2px 2px #04050475 inset, 
+            5px 5px 2px #04050475;
+     word-wrap: break-word;
+     display: block;
+   }
+
+  .card-light {
+      margin: 0.5em;
+      padding: 0.5em;
+      background: #5d5f60;
+      border: 3px groove #7d7f76;
+      border-radius: 15px 15px 15px 15px;
+      box-shadow: 2px 2px 2px #04050475 inset, 
+            5px 5px 2px #04050475;
+     word-wrap: break-word;
+      display: block;
+  }
+
+
+  .card-anvil {
+      margin: 0.5em;
+      padding: 0.5em;
+      background: #5d5f6095;
+      border: 3px groove #4c5055;
+      border-radius: 15px 15px 15px 15px;
+      box-shadow: 2px 2px 2px #2a2e33 inset, 
+            5px 5px 2px #04050475;
+     word-wrap: break-word;
+      display: block;
+  }
+
+  .card-standard{
+      margin: 0.5em;
+      padding: 0.5em;
+      background: #15111995;
+      border: 2px groove #15091c50;
+      border-radius: 15px 15px 15px 15px;
+      box-shadow: 2px 2px 2px #04050475 inset, 
+            5px 5px 2px #04050475;
+     word-wrap: break-word;
+      display: block;
+  }
+
+  .card-fordave{
+       margin: 0.5em;
+      padding: 0.5em;
+      background: #904949;
+      border: 1px solid #900000;
+      border-radius: 15px 15px 15px 15px;
+      box-shadow: 2px 2px 2px #04050475 inset, 
+            5px 5px 2px #04050475;
+     word-wrap: break-word;
+      display: block;
+   }
+
+  .card-zumren{
+       margin: 0.5em;
+      padding: 0.5em;
+      background: #4a5b74;
+      border: 1px solid #0047ab;
+      border-radius: 15px 15px 15px 15px;
+      box-shadow: 2px 2px 2px #04050475 inset, 
+            5px 5px 2px #04050475;
+     word-wrap: break-word;
+      display: block;
+   }
+
+     /*PHRASE KEYS*/
+
+.user-css .card-light .phrase-key {
+     background: #04050450;
+     font-size: 18px;
+     margin: -8px;
+     padding: 6px;
      border-radius: 5px 5px 0px 0px;
      margin-bottom: 5px;
      text-align: center;
+     font-weight: 700;
+} 
+
+.user-css .card-ink .phrase-key {
+     background: #04050450;
+     font-size: 18px;
+     margin: -8px;
+     padding: 6px;
+     border-radius: 5px 5px 0px 0px;
+     margin-bottom: 5px;
+     text-align: center;
+     font-weight: 700;
 }
+
+.user-css .card-ceie .phrase-key {
+     background: #04050450;
+     font-size: 18px;
+     margin: -8px;
+     padding: 6px;
+     border-radius: 5px 5px 0px 0px;
+     margin-bottom: 5px;
+     text-align: center;
+     font-weight: 700;
+}
+
+.user-css .card-zumren .phrase-key {
+     background: #04050450;
+     font-size: 18px;
+     margin: -8px;
+     padding: 6px;
+     border-radius: 5px 5px 0px 0px;
+     margin-bottom: 5px;
+     text-align: center;
+     font-weight: 700;
+}
+
+.user-css .card-fordave .phrase-key {
+     background: #04050450;
+     font-size: 18px;
+     margin: -8px;
+     padding: 6px;
+     border-radius: 5px 5px 0px 0px;
+     margin-bottom: 5px;
+     text-align: center;
+     font-weight: 700;
+}
+
+
+ .user-css .card-anvil .phrase-key {
+     background: #04050450;
+     font-size: 18px;
+     margin: -8px;
+     padding: 6px;
+     border-radius: 15px 15px 0px 0px;
+     margin-bottom: 5px;
+     text-align: center;
+     font-weight: 700;
+}
+
+.user-css .box-contain .phrase-key {
+     background: #04050450;
+     font-size: 18px;
+     margin: -8px;
+     padding: 6px;
+     border-radius: 5px 5px 0px 0px;
+     margin-bottom: 5px;
+     text-align: center;
+     font-weight: 700;
+}
+
+.user-css .card-standard .phrase-key {
+     background: #04050450;
+     font-size: 18px;
+     margin: -8px;
+     padding: 6px;
+     border-radius: 5px 5px 0px 0px;
+     margin-bottom: 5px;
+     text-align: center;
+     font-weight: 700;
+}
+
  
   /* Timeline */
   
@@ -1035,21 +1205,28 @@
 
 /*Spoiler Background*/
 .user-css .spoiler-content, .user-css-extended .spoiler-content { 
-     background: transparent;
+     background: transparent !important;
+     color: silver;
  }
+
+.user-css .spoiler-card {
+     background-color: transparent;
+}
 
 /*Statblock*/
 .user-css .statblock {
       background: none;
 }
 
-/*Interactive Table*/
+/*TABLES*/
+/*Statblock Table*/
 .user-css .statblock .table.table-striped th {
   background: #161819 !important;
 }
 .user-css .statblock .table.table-striped td {
   background: #9d9ea0 !important;
 }
+
 
 /*BBCodeTable*/
 .user-css .table-striped th {
@@ -1058,8 +1235,50 @@
 }.user-css .table-striped td {
                   color: #000;
   background: #9d9ea0;
-
 }
+
+/*Interactive Table*/
+.user-css .thales-cell:nth-child(1){
+   font-weight:bold;
+}
+
+.user-css .thales-cell:nth-child(7){
+    color: #900000;
+    font-weight:bold;
+    font-size: 1.2em;
+}
+
+.user-css .thales-wrapper .thales-row .thales-cell-content {
+    justify-content: center;
+}
+
+.user-css .thales-cell .thales-cell-article {
+    justify-content: center;
+}
+
+.user-css .thales-table tr:nth-child(odd){
+     background: #959690;
+}
+
+.user-css .box-contain .thales-render {
+   --TableContainerBorder: 0px solid #c8c8c8 ;
+   --TableBorder: 1px solid #c8c8c8;
+   --TableBackground: #c8c8c8;
+   --TableHeaderBackground: #24172a;
+   --TableHeaderBorder: 1px solid #222;
+   --TableHeaderFontColor: silver;
+   --TableHeaderFontSize: 1.2em;
+   --TableHeaderFontWeight: 700;
+   --TableHeaderPadding: 10px 10px;
+   --TableRowBorder: 1px solid #9d9ea0;
+   --TableRowHoverBackground: #646464;
+   --TableCellFontColor: #24172a;
+   --TableCellPlaceholderColor: #959690;
+   --TableCellPadding: 10px 10px;
+   --TableCellBackgroundHover: transparent;
+   --TableCellBorder: 1px solid #1d0e24;
+}
+
 
 
 /* CALENDARs */
@@ -1154,7 +1373,7 @@
     }
 }
 
-/*CALENDER HOVER*/
+/*Hover*/
 
 .user-css-calendar .calendar-day,
 .user-css-calendar .table,
@@ -1197,3 +1416,51 @@ font-size: 1.5em;
 .user-css-calendar .celestial-phase {
 background: none;
 }
+
+/*Artist Credits*/
+.user-css .artist-credits {
+background: transparent;
+font-size:0px;
+line-height: 0px;
+padding:.25em;
+margin:auto;
+content:url(https://www.worldanvil.com/uploads/images/838028c34d1bd01d4f908fa3e6582f6b.png)
+}
+ 
+
+.user-css .artist-credits:hover {
+content:normal;
+font-size: 12px;
+line-height:14px;
+transition: all 0.3s;
+padding:.25em;
+margin:auto;
+color:#000;
+}
+
+/*family tree*/
+.user-css .rhea-family-tree .rhea-character-node .character-label .character-life { 
+    display : none;
+}
+
+/*Discussion Boards*/
+.user-css .discussion-board-wrap {
+     background-color: transparent;
+}
+
+/*Copyright this Year*/
+.user-css .template-currentyear-tillerz-208 {
+    background-color: transparent;
+    border: none;
+    display: inline;
+    padding: 0px;
+}
+.user-css .template-currentyear-tillerz-208 .btn { 
+    display: none; 
+}
+
+/*hide child articles*/
+.user-css.no-sub-articles .article-horizontal-navigation .glossary-block, .user-css.no-sub-articles .article-horizontal-navigation h3:nth-child(2), .user-css.no-sub-articles .article-horizontal-navigation hr:nth-child(1) {
+display: none!important;
+}
+
