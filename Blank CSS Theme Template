@@ -1,0 +1,981 @@
+/* =||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||= */
+/* ============================================================================= */
+/* =                                                        ~ TEMPLATE ~                                                                        = */
+/* ============================================================================= */
+/* =                                         A WORLD ANVIL THEME TEMPLATE                                                       = */
+/* =                                                   MADE BY BLUETYGER                                                                  = */
+/* ============================================================================= */
+/* =||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||= */
+
+/* In order to use this template you should be familiar with how CSS is coded, and what properties */
+/* can be assigned to the different elements listed in this template. In a few of them I have left the */
+/* properties written out to provide some examples, or to provide a few not as obvious edits that */
+/* You may or may not want to keep. */
+
+/* If you already know what you want to edit, but is unsure of the correct name of the element you */
+/* need to target, you can quick search this document using CTRL+F (Win) / CMD+F (Mac) and find it */
+/* with a simple keyword search. All elements are commented with a short explanation of what they */
+/* do. */
+
+/* If you are new to CSS coding, I recommend you keep the WA Codex Guide to CSS Formatting near, */
+/* you can find it at https://www.worldanvil.com/w/WorldAnvilCodex/a/css . I also recommend that */
+/* you write the code in a CSS parser software, such as Notepad++ or Sublime, and not directly into */
+/* the WA's CSS box directly. */
+
+
+/* =||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||= */
+/* ============================================================================= */
+/* =                                                         ~ REMINDER ~                                                                       = */
+/* ============================================================================= */
+/* =||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||= */
+
+/* To comply with the rules you can only target elements nestled into any of the "user-css" elements. */
+/* The root element .user-css-presentation may only be used standalone (without a nestled element call) */
+/* in order to set variables or change your world's background. */
+
+.user-css-presentation { }
+
+.user-css { }
+.user-css-extended { }
+
+.map-context-user-css { }
+.user-css-map { } 
+.user-css-map-sidebar { }
+
+.user-css-secret { }
+.user-css-rpgblock { }
+
+/* Example: .user-css-presentation {color:white;} is not allowed, but you can safely use these instead: */
+/* .user-css-presentation p { color: white; } or .user-css { color: white; }. */
+
+
+/* =                                                 ~ SECTION TARGETING ~                                                              = */
+/* ============================================================================= */
+
+/* If you want to style different pages or sections differently from others, you can! Here's a list of the */
+/* unique identifiers I have found so far. If I have missed any, please let me know and I'll add them. */
+
+/* Targets only article pages. */
+.user-css-presentation .page-article { } 
+
+/* Targets only article pages of the organization template. */
+.user-css-presentation .page-article .article-organization { } 
+/* Each template have a similar identifier you can target. */
+
+.user-css-presentation .page-category { } /* Targets only category pages. */
+.user-css-presentation .page-timeline { } /* Targets only timeline pages. */
+.user-css-presentation .page-image { } /* Targets only image pages. */
+.user-css-presentation .page-followers { } /* Targets only the follower page. */
+
+.user-css-map { } /* Targets the map pages. */
+.user-css-map-sidebar { } /* Targets the left sidebar on map pages. */
+
+.user-css-presentation .article-12345 { } /* Targets a specific article. 12345 is the unique ID. */
+.user-css-presentation .category-12345 { } /* Targets a specific category. */
+.user-css-presentation .image-12345 { } /* Targets a specific image. */
+.user-css-map .map-12345 { } /* Targets a specific map. */
+
+
+/* =||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||= */
+/* ============================================================================= */
+/* =                                                           ~ FONTS ~                                                                           = */
+/* ============================================================================= */
+/* =||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||= */
+
+/* Here's an example of how a successfully imported font should look like. */
+/* Please consult the WA's Codex on CSS to find out how to import fonts. */
+@font-face {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/raleway/v12/0dTEPzkLWceF7z0koJaX1A.woff2);
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215;
+}
+
+
+/* =||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||= */
+/* ============================================================================= */
+/* =                                                         ~ VARIABLES ~                                                                       = */
+/* ============================================================================= */
+/* =||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||= */
+
+/* Variables are used to store properties under a descriptive name that later can be use throughout */
+/* your code. This can speed up coding by making it easier to remember properties you want to use */
+/* several times in different elements, and later also makes it easy to later edit a repeated property */
+/* by editing the variable instead of every element supposed to hold the property. */
+
+.user-css-presentation {
+	/* Colors are a good idea to make variables for. It's better to use HEX values than RGB currently. */
+	/* HEX also supports Opacity now. */
+	 --white: #FFFFFF;
+	 --white80%: #FFFFFFCC;
+	 
+	/* Values you are going to use in several places is also good to use as variables. */
+	 --fontstandard: 14px Verdana, sans-serif;
+	 --thinborder: 1px var(--white) solid;
+}
+
+/* =||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||= */
+/* ============================================================================= */
+/* =                                                      ~ PERSONAL FIXES ~                                                                = */
+/* ============================================================================= */
+/* =||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||= */
+
+/* This section contains a few edits and fixes that I tend to use on my themes. I left them here in case */
+/* you'd like to use them. If you don't you can just omit them entirely. */
+
+/* Hides the World Title and Current Date on the frontpage. */
+.user-css-presentation .world-title, .user-css-presentation .world-currentDate { 
+     display: none;
+}
+
+/* Removes pointer events (links) from the world title in the topmenu, and from categories in the ToC. */
+.user-css-presentation .worldmenu-inner h1 a, .user-css-presentation .table-of-contents h5 a { 
+     pointer-events: none;
+}
+
+/* For my dark themes, I recolor the Genesys setback to gray instead of black for visibility. */
+.user-css-presentation .genesys-wrapper .setback { 
+ 	 color: grey;
+}
+
+/* Hides Campaigns and Heroes section on the frontpage. */
+.user-css-presentation h2.world-campaigns-title, .user-css-presentation div.world-campaigns, .user-css-presentation h2.world-heroes-title, .user-css-presentation div.world-heroes {
+     display: none;
+}
+
+/* This styles the first H3 (html) on Character/Person template. Meant to style the name row different */
+/* from the rest. WARNING! If you don't use the name row, it will style the next H3 (html) header it */
+/* finds instead. */
+.user-css-presentation .template-person h3:first-child { 
+	 text-align: center;
+}
+
+/* This specifically styles the "By Author" words in the author line on the front page to add some padding */
+/* between it and the world cover/title. */
+.user-css-presentation .m-b-0 { 
+	 margin-top: 20px !important;
+}
+
+/* If you don't want to use the hidden topmenu, you can hide the button opening it. */
+.user-css-presentation .menu-control {
+     display: none;
+}
+
+
+/* =||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||= */
+/* ============================================================================= */
+/* =                                                       ~ THEME PARK ~                                                                     = */
+/* ============================================================================= */
+/* =||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||= */
+
+/* Ensures the background doesn't unexpectedly disappear. It's good if you keep it around. */
+#full-layout div.user-css-viewer { 
+	 background: none; 
+}
+
+/* Affects the whole site. Please use only to put a cover background behind the main body of the site. */
+.user-css-presentation { 
+     background: url(urlhere) fixed no-repeat;
+     background-size: cover;
+     background-color: #00000000;
+}
+
+/* Sets the base look and feel for the main body of the site, where the front page, articles, categories */
+/* etc are displayed. It's a good place to set your desired default values for basic text font and its color. */
+.user-css-presentation .page { 
+     background-image: url();
+     background-color:  #00000000;
+     border: var(--borderStandard);
+     box-shadow: var(--shadowStandard);   
+     font: var(--fontStandard);
+     color: var(--colorStandard);
+}
+
+/* These style the scrollbars appearing on scrollable elements. */
+/* Credits: Ademal the Narrator. */
+.user-css-presentation ::-webkit-scrollbar { }
+.user-css-presentation ::-webkit-scrollbar-track { }
+.user-css-presentation ::-webkit-scrollbar-thumb { }
+.user-css-presentation ::-webkit-scrollbar-thumb:hover { }
+
+	
+/* =                                                    ~ THE TOPMENU ~                                                                     = */
+/* ============================================================================= */
+
+/* This styles the topmenu you reach by clicking the top right bookmark. */
+/* Background colors and images require an !important to not be overridden by the default theme. */
+.user-css-presentation .worldmenu-inner  { 
+     background-image: url(urlhere) !important;
+     background-color: RGBA(0,0,0,0) !important;
+}
+
+/* This can be used to style the username wells, particularly in the topmenu. */
+.user-css-presentation .well { }
+
+
+/* =                                                        ~ BUTTONS ~                                                                         = */
+/* ============================================================================= */
+
+/* Buttons behave very similar to links in how they can be styled. */
+/* Most have a normal selector, and then also a :hover, :focus and :active version. */
+
+/* The basic button selector. Selectors like hover, focus or active require !important on backgrounds. */
+.user-css-presentation .btn-default { 
+	 background: ;
+	 border: ;
+	 border-radius: ;
+	 color: ;	
+}
+
+/* Styles all primary buttons. */
+.user-css-presentation .btn-primary {  }
+
+ /* Styles all secondary buttons. */
+.user-css-presentation .btn-secondary { }
+
+/* Styles all danger/delete buttons. */
+.user-css-presentation .btn-danger { }
+
+
+/* =                                                 ~ ARTICLE/MAP BLOCKS ~                                                             = */
+/* ============================================================================= */
+
+/* This edits the blocks for articles and maps that either show naturally or are embedded in. */
+
+.user-css-presentation .article-panel { } 
+.user-css-presentation .article-panel:hover { }
+.user-css-presentation .article-panel .heading { }
+.user-css-presentation .article-panel .details p { }
+.user-css-presentation .article-panel .cover { }
+
+.user-css-presentation .map-box { }
+.user-css-presentation .map-box:hover { }
+.user-css-presentation .map-box strong { }
+.user-css-presentation .map-box p { }
+
+
+/* =                                                            ~ TEXT ~                                                                            = */
+/* ============================================================================= */
+
+/* Styles all the horizontal separation lines. */
+.user-css-presentation hr { }
+
+/* Styles the dropcaps BBCode. */
+.user-css-presentation .dropcap { }
+
+/* These affects the world, topmenu, article and category main titles. */
+.user-css-presentation h1, .user-css-presentation h1 a, .user-css-presentation .worldmenu-inner h1 a { }
+
+.user-css-presentation h2 { } /* This is the H bbcode.*/
+.user-css-presentation h3 { } /* This is for the H2 bbcode. */
+.user-css-presentation h4 { } /* This is for the H3 bbcode. */
+.user-css-presentation h5 { } /* This is for the H4 bbcode. */
+.user-css-presentation h6 { } /* This is for the H5 bbcode. */
+
+/* Styles the default entries in the sidepanel. */
+.user-css-presentation .panel dt { }
+.user-css-presentation .panel dd { }
+
+/* Styles --key::value-- code. */
+.user-css-presentation .phrase-key  { }
+.user-css-presentation .phrase-value  { }
+
+
+/* =                                                           ~ LINKS ~                                                                            = */
+/* ============================================================================= */
+
+/* Links, similar to buttons, have several states: visited, hover, focus and active. */
+/* You  need to list them in the above order for them to work properly. */
+
+.user-css-presentation a { } 
+
+/* These edits the look of the placeholder links. */
+.user-css-presentation .text-danger { } 
+
+/* These edits the look of the tooltips. */
+.user-css-presentation .text-abbreviation { } 
+
+/* This is the back to front page button visible on the bottom left of article covers. */
+.user-css-presentation .backtoworld a { }
+
+/* This is the back to front page navigation strip visible below category covers. */
+.user-css-presentation .nav-strip { }
+.user-css-presentation .nav-strip a { }
+
+/* This is the navigation at the bottom of articles, for the previous and next and back to category links. */
+.user-css-presentation .nav-linear { }
+/* BONUS!!!! If you'd like them to appear as buttons, you can style this bit. */
+.user-css-presentation .nav-linear div.col-md-4 { } 
+
+/* These styles the top right button opening and closing the topmenu. */
+.user-css-presentation .menu-control { }
+
+/* These styles the author links. */
+.user-css-presentation .world-author a { }
+.user-css-presentation .article-title-author a  { }
+
+/* Edits the artist credits, for covers primarily. */
+.user-css-presentation .page .artist-credits { }
+.user-css-presentation .page .artist-credits a { }
+.user-css .credit-artist-website.credit-artist-name { }
+
+/* This affects the RPG navigaton tabs on the bottom right of the character article cover. */
+.user-css-presentation .character-menu { }
+
+/* This affects the tabs down by the metadata in articles. */
+.user-css-presentation .nav-tabs { }
+
+/* This affects the actual buttons of both the RPG and the metadata tabs.*/
+.user-css-presentation .nav-tabs li a { }
+.user-css-presentation .nav-tabs li.active a { }
+
+
+/* =                                                        ~ COLUMNS ~                                                                        = */
+/* ============================================================================= */
+
+/* These will style the looks of the columns BBCode. */
+.user-css .user-row { }
+
+/* This is for the [col] bb code element in a 2-column layout */
+.user-css .user-row div.col-md-6 { }
+
+/* If you want to target the first or last column specifically, you can do it this way. */
+.user-css .user-row div.col-md-6:first-of-type { }
+.user-css .user-row div.col-md-6:last-of-type { }
+
+/* This is for the [col] bb code element in a 3-column layout */
+.user-css .user-row div.col-md-4 { }
+
+
+/* =                                                          ~ TABLES ~                                                                           = */
+/* ============================================================================= */
+
+/* This styles the general look and feel of tables, both in BBCode and Statblocks. */
+.user-css-presentation table { }
+
+ /* This affects the header rowof tables. */
+.user-css-presentation th { }
+
+/* Styles all rows but the header in tables. */
+.user-css-presentation tr { }
+
+/* Styles the cells in tables. */
+.user-css-presentation td { }
+
+/* Affects every odd row in tables, good for making striped looks. */
+.user-css-presentation tr:nth-child(odd) { }
+
+/* Affects every even row in tables, good for making striped looks. */
+.user-css-presentation tr:nth-child(even) { }
+
+
+/* =                                                     ~ STATBLOCKS ~                                                                       = */
+/* ============================================================================= */
+
+/* Styles the statblocks embedded on pages. */
+.user-css-presentation .statblock { }
+.user-css-presentation .statblock p { }
+.user-css-presentation .statblock hr { }
+
+
+/* =                                                   ~ SEARCH FORM ~                                                                       = */
+/* ============================================================================= */
+
+/* This will style the look of the search field box on the top left of your pages. */
+.user-css-presentation .search-form .typeahead-input { }
+
+/* Styles the magnifying glass in the search field box. */
+.user-css-presentation .search-form #search-button { }
+.user-css-presentation .search-form #search-button:hover { }
+.user-css-presentation .search-form #search-button:active { }
+
+/* This styles the dropdown box showing the search results. */
+.user-css-presentation .search-form .dropdown-menu { }
+
+/* Recolors the links in the dropdown box search results.*/
+.user-css-presentation .search-form .dropdown-menu .active a { }
+.user-css-presentation .search-form .dropdown-menu .active a:hover { }
+
+/* Recolors the non-link text bits in the dropdown box search results.*/
+.user-css-presentation .search-form .dropdown-item { }
+.user-css-presentation .search-form .dropdown-item .text-muted { }
+.user-css-presentation .search-form .dropdown-menu .active a .text-muted { }
+
+
+/* =                                                     ~ SPOILERS ~                                                                             = */
+/* ============================================================================= */
+
+/* Styles the button that opens the spoiler. */
+.user-css-presentation .spoiler-button { }
+.user-css-presentation .spoiler-button:hover { }
+.user-css-presentation .spoiler-button:active { }
+.user-css-presentation .spoiler-button:focus { }
+.user-css-presentation .spoiler-button:target { }
+
+/* Styles the actual box for the spoiler text. */
+.user-css-presentation .spoiler-content { }
+
+
+/* =                                                    ~ TOOLTIPS ~                                                                             = */
+/* ============================================================================= */
+
+/* Ensures the tooltip isn't see-through. Remove if you want to keep the opacity. */
+.user-css-presentation .tooltip { 
+    opacity: 1;
+}
+
+ /* Styles the tooltip itself. */
+.user-css-presentation .tooltip .tooltip-inner { }
+
+/* Styles the tooltip arrow. */
+.user-css-presentation .tooltip.top .tooltip-arrow { }
+.user-css-presentation .tooltip.left .tooltip-arrow { }
+.user-css-presentation .tooltip.bottom .tooltip-arrow { }
+.user-css-presentation .tooltip.right .tooltip-arrow { }
+
+
+/* =                                                   ~ BLOCKQUOTE ~                                                                        = */
+/* ============================================================================= */
+
+/* This styles the box wrapping around quotes using the blockquote BBCode. */
+.user-css-presentation blockquote { }
+
+/* This styles the font for the author line in quotes. */
+.user-css-presentation blockquote .author { }
+
+/* Styles the blockquotes put inside other elements. */
+.user-css-presentation .panel-default blockquote { }
+.user-css-presentation .panel-greatgm blockquote { }
+
+
+/* =                                                 ~ RPG FEATURES ~                                                                        = */
+/* ============================================================================= */
+
+/* This styles the Read-Aloud box. */
+.user-css-presentation .aloud { }
+
+/* This edits the GM Notes panel. */
+.user-css-presentation .panel-greatgm { }
+
+/* This edits the GM NPC sheet. */
+.user-css-presentation .panel-npcsheet { }
+.user-css-presentation .panel-npcsheet h5 { }
+.user-css-presentation .panel-npcsheet hr { }
+
+/* Styles the dice roll buttons and result windows. */
+.user-css-presentation .label-roller { }
+.user-css-presentation .notifyjs-bootstrap-roller-alert { }
+
+/* Styles the dice roll button and result window overlays. Backgrounds require an !important to work. */
+.user-css-presentation .label-roller:hover { }
+.user-css-presentation .notifyjs-bootstrap-roller-alert:hover { }
+
+/* Styles the dice roll button color when clicked. Backgrounds require an !important to work. */
+.user-css-presentation .label-roller:focus { }
+.user-css-presentation .label-roller:active { }
+
+
+/* =                                                        ~ IMAGES ~                                                                            = */
+/* ============================================================================= */
+
+/* I decided to save a few of my most common edits to the image elements. Use if you like. :) */
+
+/* This edits the block wrapping the image. */
+.user-css-presentation .user-css-image-thumbnail { 
+     display: inline-block;
+     margin: 10px;
+     padding: 5px;
+}
+
+/* This edits any text shown below the image. */
+.user-css-presentation .user-css-image-thumbnail p { 
+     margin: 0px;
+}
+
+.user-css-presentation .user-css-image-thumbnail .artist-credits { }
+.user-css-presentation .user-css-image-thumbnail a { }
+
+
+/* =                                                ~ RELATIONSHIPS ~                                                                        = */
+/* ============================================================================= */
+
+/* Character relationships. */
+.user-css-presentation .character-relationships { }
+.user-css-presentation .character-relationships hr { }
+.user-css-presentation .character-relationships .m-b-0 { }
+.user-css-presentation .character-relationships .m-t-10 { }
+.user-css-presentation .character-relationships h3 { }
+.user-css-presentation .character-relationships h5 { }
+
+/* Character relationships - relation box. */
+.user-css-presentation .character-relationships .p-20 { }
+/* Character relationships - exchange arrows. */
+.user-css-presentation .character-relationships .fa-3x { }
+/* Character relationships - also affects the whole box. */
+.user-css-presentation .character-relationships .col-md-2 { }
+/* Character relationships - The chain icon. */
+.user-css-presentation .fa-link { }
+
+/* Diplomatic relationships. */
+.user-css-presentation .relation .col-md-12 { }
+.user-css-presentation .relation h4 { }
+.user-css-presentation .relation h5 { }
+.user-css-presentation .relation .relationScore { }
+
+
+/* =                                                    ~ TIMELINES ~                                                                            = */
+/* ============================================================================= */
+
+/* These edit the normal, basic timeline boxes. */
+.user-css-presentation .timeline li .timeline-panel { }
+.user-css-presentation .timeline li .timeline-panel .tl-heading { }
+.user-css-presentation .timeline li .timeline-panel .header-icon { }
+.user-css-presentation .timeline li .timeline-panel h5 { }
+.user-css-presentation .timeline li .timeline-panel h4 { }
+.user-css-presentation .timeline li .timeline-panel h4 small { }
+.user-css-presentation .timeline li .timeline-panel small { }
+.user-css-presentation .timeline li .timeline-panel p { }
+.user-css-presentation .timeline li .timeline-panel:before { }
+.user-css-presentation .timeline li .timeline-panel:after { }
+.user-css-presentation .timeline li .timeline-panel a { }
+
+/* These edit the milestone timeline boxes. */
+.user-css-presentation .timeline li.timeline-entry-milestone { }
+.user-css-presentation .timeline li.timeline-entry-milestone .milestone-panel { }
+.user-css-presentation li.timeline-entry-milestone .milestone-panel .tl-heading-date { }
+.user-css-presentation .timeline li.timeline-entry-milestone .header-icon { }
+.user-css-presentation .timeline li.timeline-entry-milestone .milestone-panel h5 { }
+.user-css-presentation .timeline li.timeline-entry-milestone .milestone-panel h4 { }
+.user-css-presentation .timeline li .milestone-panel h4 { }
+.user-css-presentation .timeline li.timeline-entry-milestone .milestone-panel h4 small { }
+.user-css-presentation .timeline li.timeline-entry-milestone .milestone-panel small { }
+.user-css-presentation .timeline li.timeline-entry-milestone .milestone-panel p { }
+.user-css-presentation .timeline li.timeline-entry-milestone .milestone-panel a { }
+
+/* This affects the timeline itself, that's running down the middle. */
+.user-css-presentation .timeline:before { }
+/* This edits the little circle/box intersecting the timeline beside the timeline entry. */
+.user-css-presentation .timeline li .tl-circ { }
+/* Edits the warning box under the Orphan History Entries header. */
+.user-css-presentation .orphan-era .alert-warning { }
+
+ /* Styling these will only affect timeline entries marked as Major Events. */
+ .user-css-presentation .timeline li.major .timeline-panel { }
+.user-css-presentation .timeline li.major .timeline-panel:before { }
+.user-css-presentation .timeline li.major .timeline-panel:after { }
+.user-css-presentation .timeline li.major .tl-circ { }
+
+ /* Styling these will only affect timeline entries marked as Important Events. */
+.user-css-presentation .timeline li.important .timeline-panel { }
+.user-css-presentation .timeline li.important .timeline-panel:before { }
+.user-css-presentation .timeline li.important .timeline-panel:after { }
+.user-css-presentation .timeline li.important .tl-circ { }
+
+ /* Styling these will only affect timeline entries marked as Minor Events. */
+.user-css-presentation .timeline li.minor .timeline-panel { }
+.user-css-presentation .timeline li.minor .timeline-panel:before { }
+.user-css-presentation .timeline li.minor .timeline-panel:after { }
+.user-css-presentation .timeline li.minor .tl-circ { }
+
+ /* Styling these will only affect timeline entries marked as Trivial Events. */
+.user-css-presentation .timeline li.trivial .timeline-panel { }
+.user-css-presentation .timeline li.trivial .timeline-panel:before { }
+.user-css-presentation .timeline li.trivial .timeline-panel:after { }
+.user-css-presentation .timeline li.trivial .tl-circ { }
+
+ /* Styling these will only affect timeline entries marked as Not Important Events. */
+.user-css-presentation .timeline li.no-importance .timeline-panel { }
+.user-css-presentation .timeline li.no-importance .timeline-panel:before { }
+.user-css-presentation .timeline li.no-importance .timeline-panel:after { }
+.user-css-presentation .timeline li.no-importance .tl-circ { }
+
+
+/* =                                                      ~ SECRETS ~                                                                             = */
+/* ============================================================================= */
+
+.user-css-secret { }
+.user-css-secret:hover { }
+.user-css-secret h5 { }
+.user-css-secret p { }
+.user-css-secret .secret-groups small { }
+
+/* BONUS! If you want to make your secrets seamless and blend in with the rest of your content, use this. */
+/* Credits go to Ademal the Narrator. */
+.user-css-secret { 
+    padding: 0px;
+    background-color: transparent;
+}
+
+
+/* =                                                   ~ FRONT PAGE ~                                                                         = */
+/* ============================================================================= */
+
+/* These edit the world vignette. */
+.user-css-presentation .subheading { }
+.user-css-presentation .col-md-8.col-md-offset-2.text-center { }
+
+/* These edits the categories displayed as books. */
+/*Don't edit the width or height unless you know what you're doing. It can get real wonky. */
+.user-css-presentation .bookcover { }
+.user-css-presentation .bookcover a { } 
+.user-css-presentation .bookcover a:hover { } 
+.user-css-presentation .bookcover a .booktitle { }
+.user-css-presentation .bookcover a:hover .booktitle { }
+.user-css-presentation .bookcover .excerpt { }
+.user-css-presentation .bookcover a:hover .excerpt { }
+.user-css-presentation .bookcover a:hover img { }
+.user-css-presentation .booktitle { }
+
+/* These edits the Table of Contents. */
+.user-css-presentation .table-of-contents span.collapser { }
+.user-css-presentation .table-of-contents span.collapser:hover { }
+.user-css-presentation .table-of-contents h5 { }
+.user-css-presentation .table-of-contents h5 a { }
+
+/* This edits the small follower avatars. */
+.user-css-presentation .followers-list { }
+.user-css-presentation .img-avatar-sm { }
+.user-css-presentation .img-avatar-sm:hover { }
+
+/* This edits the campaign panels. */
+.user-css-presentation .world-campaigns { }
+.user-css-presentation .campaign-panel { }
+.user-css-presentation .campaign-panel .details { }
+.user-css-presentation .campaign-panel .details:hover { }
+
+/* This edits the heroes panels. */
+.user-css-presentation .world-heroes { }
+
+
+/* =                                                ~ ARTICLE PAGES ~                                                                        = */
+/* ============================================================================= */
+
+.user-css-presentation .article-content { }
+
+/* Styles the author lines. */
+.user-css-presentation .m-b-0 { }
+.user-css-presentation .article-title-author { }
+
+/* This is for the subheader under article titles. */
+.user-css-presentation .article-subheading { }
+
+/* This specifically styles the H4 (html) header that makes out the organization motto. */
+.user-css-presentation .organization-motto h4 { }
+
+/* This styles the panels on the right inside articles. */
+.user-css-presentation .panel { }
+.user-css-presentation .panel .panel-body { }
+
+.user-css-presentation .panel-default { }
+.user-css-presentation .panel-default .panel-heading { }
+
+.panel-danger { }
+/* These let you differentiate the ruined structure header from the placeholder links look. */
+.panel-danger .text-danger { } 
+.panel-danger .text-danger:hover { }
+
+/* BONUS! You can make the side panel sticky using this trick. */
+/* Credits go to LieutenantDebug. */
+@media only screen and (min-width:992px) {
+  .user-css .article-content .row .col-md-8 + .col-md-4 {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 10px;
+    max-height: 100vh;
+    overflow-y: auto;
+    border: 1px solid gray;
+    background: lightgray;
+    box-shadow: 2px 2px 6px rgba(50, 50, 50, 0.5) ;
+    z-index: 1050;
+  }
+}
+
+/* Edits the prose articles. wob = White on Black mode, bow = Black on White mode. */
+/* You need to use !important for background colors and images to stick. */
+.user-css-presentation .wob { }
+.user-css-presentation .wob p { }
+.user-css-presentation .bow { }
+.user-css-presentation .bow p { }
+
+/* These styles the tags down in the metadata. */
+.user-css-presentation .tag { }
+.user-css-presentation .tag:hover { }
+
+/* These edits the comments section below the metadata. */
+.user-css-presentation .comment-box { }
+.user-css-presentation .comment-form textarea { } 
+.user-css-presentation .comment-box .comment-box-avatar { }
+.user-css-presentation .comment-box .comment-box-avatar:hover { }
+.user-css-presentation .comment-box-reply { }
+
+/* These will edit the modal popup that appears when pressing "Read Document" in the document article template. */
+.user-css-presentation .modal-content { }
+.user-css-presentation .modal-title { }
+.user-css-presentation .modal-content .close { }
+
+/* Scales the iframe embeds. */
+.user-css-presemtation iframe { }
+
+
+/* =                                           ~ CATEGORY PAGES ~                                                                         = */
+/* ============================================================================= */
+
+/* This specific edit pushes the row with the header and the text to fill the entire width available. */
+.user-css-presentation .page-category .col-md-8 { 
+    width: 100%;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+/* This edit removes the offset of the category title. */
+.user-css-presentation .page-category .col-md-offset-2 { 
+    margin-left: 0px;
+}
+
+/* This edit centers the category title and puts space between it and the text. */
+.user-css-presentation .page-category h1 { 
+    text-align: center;
+    margin-bottom: 20px !important;
+}
+
+/* This edit adds a separating line between the text and the article-holding footer. */
+/* Also adds some space below the text. */
+.user-css-presentation .page-category .col-md-4 { 
+     margin-top: 20px;
+     border-top: var(--thinborder);
+}
+
+
+/* =                                              ~ FOLLOWER PAGE ~                                                                        = */
+/* ============================================================================= */
+
+/* The page listing all your world's followers. */
+
+.user-css-presentation .follower-box { }
+.user-css-presentation .follower-box .img-circle { }
+.user-css-presentation .follower-box a { }
+.user-css-presentation .follower-box small { }
+.user-css-presentation .follower-box p { }
+
+
+/* =                                              ~ CAMPAIGN PAGE ~                                                                        = */
+/* ============================================================================= */
+
+/* This targets the window listing the campaign's protagonists. */
+.user-css-presentation .campaign-protagonists { }
+.user-css-presentation .campaign-protagonists .character-portrait { }
+.user-css-presentation .campaign-protagonists .character-portrait:hover { }
+.user-css-presentation .character-portrait-data { }
+.user-css-presentation .character-portrait-data h5 { }
+.user-css-presentation .character-portrait-data a { }
+.user-css-presentation .character-portrait-data a:hover { }
+
+/* This targets the session panels. */
+.user-css-presentation .session-panel { }
+.user-css-presentation .session-panel .session-date-indicator { }
+.user-css-presentation .session-panel .img-avatar { }
+.user-css-presentation .session-panel .img-avatar:hover { }
+.user-css-presentation .campaign-protagonists .character-portrait:hover { }
+
+
+/* =                                    ~ WORLD AUTHOR ELEMENTS ~                                                                 = */
+/* ============================================================================= */
+
+/* These edit the white label widget on the left that only authors of the world can see. */
+.user-css-presentation .widget-white-label-mark {  }
+.user-css-presentation .widget-white-label-mark a { }
+
+/* These edit the quick action buttons seen on the bottom right for world authors. */
+.user-css .user-css-panel .btn-quickaction {  }
+.user-css .user-css-panel .btn-quickaction .ra-hammer {  }
+.user-css .user-css-panel .btn-quickaction .ra-health {  }
+
+.user-css .user-css-panel .btn-quickarticle {  }
+.user-css .user-css-panel .btn-quickarticle .ra-quill-ink {  }
+.user-css .user-css-panel .btn-quickarticle .ra-health {  }
+
+.user-css .user-css-panel .btn-quickimage {  }
+.user-css .user-css-panel .btn-quickimage .ra-vial {  }
+.user-css .user-css-panel .btn-quickimage .ra-health {  }
+
+
+/* =||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||= */
+/* ============================================================================= */
+/* =                                                           ~ EXTRAS ~                                                                         = */
+/* ============================================================================= */
+/* =||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||= */
+
+/* These require GRANDMASTER+ subscription on WA. */
+/* Theye can be accessed using the [container][/container] and [section][/section] special BBCodes. */
+/* Containers are blocks, while sections are inline. */
+
+/* Coloring text (Let's go back to the GeoCities era! ;) ). */
+/* Wrap text in [section:text-color][/section]. */
+.user-css-presentation .text-red { 
+     color: #ee2f24;
+}
+.user-css-presentation .text-orange { 
+     color: #f8981c;
+}
+.user-css-presentation .text-yellow { 
+     color: #f3ed3a;
+}
+.user-css-presentation .text-green { 
+     color: #65b045;
+}
+.user-css-presentation .text-blue { 
+     color: #1891ce;
+}
+.user-css-presentation .text-purple { 
+     color: #7d3695;
+}
+
+/* I tend to style this to match the look of the article sidepanel. */
+/* Wrap content in [container:extrapanel][/container]. */
+.user-css-presentation .extrapanel { }
+
+/* You can make a little breadcrumb link trail if the need arises. */
+/* Wrap content in [container:breadcrumb][/container]. */
+/* Credits go to Tikal. */
+.user-css-presentation .breadcrumb { 
+     display:inline-block;
+     margin-bottom: 0px;
+     padding: 0px;
+}
+.user-css-presentation .breadcrumb ul {
+     margin-top: 8px;
+     margin-bottom: 8px;
+     margin-left: 25px;
+     margin-right: 10px;
+     padding: 0px;
+     list-style: none;
+}
+.user-css-presentation .breadcrumb li {
+     display: inline-block;
+     vertical-align: middle;
+     padding: 0px;
+     padding-left: 2px;
+     margin: 0px;
+}
+
+/* A little table of contents box to go with your in-article anchors. */
+/* Wrap content in [container:articletoc][/container]. */
+.user-css-presentation .articletoc { 
+     display:inline-block;
+     margin-bottom: 0px;
+     padding: 0px;
+}
+.user-css-presentation .articletoc ul {
+     margin-top: 8px;
+     margin-bottom: 8px;
+     margin-left: 25px;
+     margin-right: 10px;
+     padding: 0px;
+     list-style: none;
+}
+.user-css-presentation .articletoc li {
+     vertical-align: middle;
+     padding: 0px;
+     padding-left: 2px;
+     margin: 0px;
+}
+
+/* Creates a block that'll only show its header until clicked on. */
+/* Wrap a blockquote in [container:comm][/container].
+/* Credits go to ForgeMotherHummingbird. */
+.user-css-presentation .comm blockquote {
+     transition: all 0.1s;
+     -webkit-transform: skew(10deg);
+     -moz-transform: skew(10deg);
+     -o-transform: skew(10deg);
+}
+.user-css-presentation .comm blockquote .author {
+     margin: 10px 0px 0px 0px;
+     padding: 5px 10px 5px 10px;
+     border: none;
+}
+.user-css-presentation .comm blockquote:hover {
+     transition: all 0.1s;
+}
+
+/* For the times you need to hide your table styling. */
+/* Wrap content in [section:invisibletables][/section]. */
+.user-css-presentation .invisibletables table, .user-css-presentation .invisibletables table tr:nth-child(odd), .user-css-presentation .invisibletables table tr:nth-child(even), .user-css-presentation .invisibletables table td {
+    max-width:100% !important;
+     background: none !important;
+     padding-bottom: 1px;
+     padding-top: 1px;
+     border: 0px !important;
+     box-shadow: none;
+}
+
+/* This eats wayward line spaces and breaks. Omnom. I use it to stack article block links more neatly. */
+/* Wrap content in [section:linespaceeater][/section]. */
+.user-css-presentation .linespaceeater .line-spacer {
+     display: none !important;
+     visibility: hidden !important;
+}
+.user-css-presentation .linespaceeater br {
+     display: none !important;
+     visibility: hidden !important;
+}
+
+/* Hides the horizontal listing of child articles under an article you don't want them to show on. */
+/* Add the CSS class "no-article-nav" to the article. */
+.user-css-presentation .no-article-nav .article-horizontal-navigation {
+   display: none;
+}
+
+/* Hides any styling CSS for one image. */
+/* Add the tag "clean-image" to the article. */
+.user-css-presentation .clean-image {
+    background: transparent !important;
+    border: 0px !important;
+    box-shadow: none;
+}
+
+/* Creates an in-line spoiler. */
+/* Wrap content in [section:inline-spoiler][/section]. */
+/* Credits go to Rinaldo Bijker. */
+.user-css-presentation .inline-spoiler {
+    background-color: black;
+    color: transparent;
+    margin: 0 3px;
+    cursor: default;
+}
+ .user-css-presentation .inline-spoiler:hover {
+    background-color: transparent;
+    color: #A00000;    
+}
+
+/* Custom article page. */
+/* Add the CSS class "custompage" to the article. */
+.user-css-presentation .custompage { }
+
+/* Different alert boxes for in-character / in-world things. */
+/* Credits go to Sierra. */
+.user-css-presentation .alert { 
+     border-left: 34px solid;
+     padding: 5px 10px;
+     width: 85%;
+     margin-left: auto;
+     margin-right: auto;
+     position: relative;
+     min-height: 70px;
+}
+.user-css-presentation .alert h5:first-child {
+     padding:5px 10px;
+     margin:0 0 10px;
+     position:absolute;
+     top:0;
+     left:0;
+     background:0 0;
+     transform:rotate(90deg);
+     transform-origin:0 0
+}
+.user-css-presentation .alert p { }
+
+.user-css-presentation .alert-notice { }
+.user-css-presentation .alert-warning { }
+.user-css-presentation .alert-danger { }
