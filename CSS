@@ -195,7 +195,8 @@
   .user-css-extended h5,
   .user-css-presentation h5,
   .tooltipster-content h5, 
-  .user-css-map-sidebar h5 {
+  .user-css-map-sidebar h5
+  .map-context-user-css .marker-content h5 {
       font-size: 26px;
       line-height: 28px;
   }
@@ -205,8 +206,9 @@
   .user-css-presentation :is(h2, h3, h4, h5),
   .tooltipster-content :is(h2, h3, h4, h5), 
   .user-css-map-sidebar :is(h2, h3, h4, h5),
-  .user-css .panel-default :is(h2, h3, h4, h5) {
-      margin-top: 20px;
+  .user-css .panel-default :is(h2, h3, h4, h5), 
+ .map-context-user-css .marker-content h5 {
+      margin-top: .25em;
       margin-bottom: 8px;
       background-image: linear-gradient(
           to right,
@@ -280,6 +282,12 @@
       border: 6px double rgba(0, 0, 0, 0.6);
   }
   
+  /*Map Popups*/
+ .map-context-user-css .leaflet-popup .leaflet-popup-content-wrapper, .map-context-user-css .leaflet-popup .leaflet-popup-tip {
+    background: #151119;
+    color: silver;
+}
+  
   /* Article Structure */
   /* Bread Crumb */
   .user-css-presentation .breadcrumb,
@@ -323,7 +331,7 @@
   
   /* Aloud */
   
-  :is(.user-css, .user-css-extended, .tooltipster-content, .user-css-map-sidebar) .aloud {
+  :is(.user-css, .user-css-extended, .tooltipster-content, .user-css-map-sidebar, .map-context-user-css) .aloud {
       color: silver;
       padding: 12px;
       background: var(--Aloud);
@@ -332,20 +340,12 @@
       border-radius: 15px 15px 15px 15px
   }
   
-  :is(.user-css, .user-css-extended, .tooltipster-content, .user-css-map-sidebar, .user-css .panel-default) .box-ink :is(h2, h3, h4, h5) {
-      margin-top: 20px;
-      margin-bottom: 8px;
-      color: white !Important;
-      border-color: white;
-      border-image: none;
-      -webkit-background-clip: default;
-      margin-top: 0px;
-  }
+
   
   
   /* Quote */
   .user-css-presentation blockquote,
-  .tooltipster-content blockquote, .user-css-map-sidebar blockquote {
+  .tooltipster-content blockquote, .user-css-map-sidebar blockquote, .map-context-user-css  blockquote{
       margin-top: 20px;
       background: var(--Blockquote);
       color: var(--TextColor);
@@ -356,6 +356,15 @@
       border-radius: 0;
       box-shadow: none;
   }
+
+.user-css-presentation blockquote .author, .tooltipster-content blockquote .author, .user-css-map-sidebar blockquote .author, .map-context-user-css  blockquote
+ .author {
+    display: block;
+    font-size: .8em;
+    font-style: italic;
+    text-align: right;
+    color: silver;
+}
   
   /* Navigation */
   /* Back to World */
@@ -823,7 +832,7 @@
   }
   
   
-  /*
+  
   [class*=css-palette-trigger]:hover ~ #hidden-sidebar #css-palette-panel,
   #css-palette-panel:hover{
       width: 30% !important;
@@ -832,9 +841,8 @@
   [class*=css-palette-trigger]:hover ~ #full-layout .page-article{
       width: 57%;
   }
-  */
+  
 
- 
   /* CONTAINERS*/
  
 .box-grid {
@@ -903,12 +911,16 @@
     background: transparent
   }
 
+.user-css .img-rotate{
+     transform: rotate(180deg);
+}
 
 .user-css .box {
-      padding: 12px;
+      padding: 10px;
       border-radius: 15px 15px 15px 15px;
       box-shadow: 2px 2px 2px #04050475 inset, 
             5px 5px 2px #04050475;
+      padding-top:
 }
   .box-ceie {
       background: #1d0e2495;
@@ -935,7 +947,7 @@
 
   .box-standard{
       border: 2px groove #15091c75;
-      background: 15111995;
+      background: #15111995;
   }
 
   .box-anvil{
@@ -1025,6 +1037,7 @@
      text-align: center;
      font-weight: 700;
 }
+
  
   /* Timeline */
   
@@ -1340,3 +1353,4 @@ color:#000;
 .user-css.no-sub-articles .article-horizontal-navigation .glossary-block, .user-css.no-sub-articles .article-horizontal-navigation h3:nth-child(2), .user-css.no-sub-articles .article-horizontal-navigation hr:nth-child(1) {
 display: none!important;
 }
+
