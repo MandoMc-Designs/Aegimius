@@ -92,7 +92,7 @@
   .user-css-extended a,
   .user-css-presentation a,
   .tooltipster-content a, 
-  .user-css-map-sidebar a, {
+  .user-css-map-sidebar a {
       color: var(--LinkColor) !important;
       font-size: 18px
   }
