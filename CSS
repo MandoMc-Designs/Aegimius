@@ -92,11 +92,15 @@
   .user-css-extended a,
   .user-css-presentation a,
   .tooltipster-content a, 
-  .user-css-map-sidebar a {
+  .user-css-map-sidebar a, {
       color: var(--LinkColor) !important;
       font-size: 18px
   }
   
+   .map-context-user-css .marker-content a {
+      color: var(--Linkcolor) !important;
+}
+
   .user-css em,
   .user-css-extended em,
   .user-css-presentation em,
@@ -229,7 +233,7 @@
   .user-css-presentation :is(h2 a, h3 a, h4 a, h5 a),
   .tooltipster-content :is(h2 a, h3 a, h4 a, h5 a), 
   .user-css-map-sidebar :is(h2 a, h3 a, h4 a, h5 a),
-  .user-css .panel-default :is(h2 a, h3 a, h4 a, h5 a) {
+  .user-css .panel-default :is(h2 a, h3 a, h4 a, h5 a){
       text-shadow: 
           1px 0px 1px var(--Darkness),
           0px 1px 1px var(--Darkness),
@@ -830,18 +834,6 @@
       margin-left: -45px;
       overflow: auto;
   }
-  
-  
-  
-  [class*=css-palette-trigger]:hover ~ #hidden-sidebar #css-palette-panel,
-  #css-palette-panel:hover{
-      width: 30% !important;
-  }
-  #hidden-sidebar:hover  ~ #full-layout .page-article,
-  [class*=css-palette-trigger]:hover ~ #full-layout .page-article{
-      width: 57%;
-  }
-  
 
   /* CONTAINERS*/
  
@@ -1353,4 +1345,6 @@ color:#000;
 .user-css.no-sub-articles .article-horizontal-navigation .glossary-block, .user-css.no-sub-articles .article-horizontal-navigation h3:nth-child(2), .user-css.no-sub-articles .article-horizontal-navigation hr:nth-child(1) {
 display: none!important;
 }
+
+
 
