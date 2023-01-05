@@ -869,61 +869,6 @@
 .box-grid-flex *{
      flex: 1 1 15em;
 }
-
-  .box-ceie {
-      padding: 12px;
-      background: #1d0e2495;
-      border: 2px groove #15091c;
-      border-radius: 15px 15px 15px 15px;
-      box-shadow: 2px 2px 2px #04050475 inset, 
-            5px 5px 2px #04050475;
-  } 
-
-
-    .box-ink {
-      padding: 12px;
-      background: #2d2d2d;
-      border: 2px groove #090909;
-      border-radius: 15px 15px 15px 15px;
-      box-shadow: 2px 2px 2px #04050475 inset, 
-            5px 5px 2px #04050475;
-  }
-  
-
-  .box-zumren {
-      padding: 12px;
-      background: #4a5b74;
-      border: 2px groove #0047ab;
-      box-shadow: 2px 2px 2px #04050475 inset, 
-            5px 5px 2px #04050475;
-      border-radius: 15px 15px 15px 15px;
-  }
-  
-  .box-fordave {
-      padding: 12px;
-      background: #904949;
-       border: 2px groove #900000;
-      box-shadow: 2px 2px 2px #04050475 inset, 
-            5px 5px 2px #04050475;
-      border-radius: 15px 15px 15px 15px;
-  }
-
-  .box-contain {
-    margin: 5px;
-    border-radius: 0px 15px 0px 15px;
-    padding: 10px;
-    background: transparent
-  }
-
-  .box-standard{
-      padding: 12px;
-      background: #151119;
-      border: 2px groove #15091c75;
-      box-shadow: 2px 2px 2px #04050475 inset, 
-            5px 5px 2px #04050475;
-      border-radius: 15px 15px 15px 15px;
-  }
-
   .box-newspaper{
       padding: 12px;
       background: transparent;
@@ -950,14 +895,53 @@
       text-transform: uppercase;
   }
 
+  .box-contain {
+    margin: 5px;
+    border-radius: 0px 15px 0px 15px;
+    padding: 10px;
+    background: transparent
+  }
 
-  .box-anvil{
+
+.user-css .box {
       padding: 12px;
-      background: #5d5f6095;
-      border: 2px groove #4c5055;
+      border-radius: 15px 15px 15px 15px;
       box-shadow: 2px 2px 2px #04050475 inset, 
             5px 5px 2px #04050475;
-      border-radius: 15px 15px 15px 15px;
+}
+  .box box-ceie {
+      background: #1d0e2495;
+      border: 2px groove #15091c;
+  } 
+
+
+    .box box-ink {
+       background: #2d2d2d;
+      border: 2px groove #090909;
+  }
+  
+
+  .box box-zumren {
+      background: #4a5b74;
+      border: 2px groove #0047ab;
+  }
+  
+  .box box-fordave {
+       border: 2px groove #900000;
+      box-shadow: 2px 2px 2px #04050475 inset, 
+            5px 5px 2px #04050475;
+   }
+
+
+  .box box-standard{
+      border: 2px groove #15091c75;
+      box-shadow: 2px 2px 2px #04050475 inset, 
+            5px 5px 2px #04050475;
+  }
+
+  .box box-anvil{
+      background: #5d5f6095;
+      border: 2px groove #4c5055;
   }
 
   .codeblock {
@@ -972,94 +956,55 @@
 
 /*CARDS*/
 
-    .card-ceie {
+.user-css .cards {
       margin: 0.5em;
       padding: 0.5em;
-      background: #1d0e2495;
-      border: 1px solid #15091c;
       border-radius: 15px 15px 15px 15px;
       box-shadow: 2px 2px 2px #04050475 inset, 
             5px 5px 2px #04050475;
      word-wrap: break-word;
       display: block;
+}
+
+  .card-ceie {
+      background: #1d0e2495;
+      border: 1px solid #15091c;
    }
 
     .card-ink {
-       margin: 0.5em;
-      padding: 0.5em;
       background: #2d2d2d;
       border: 1px solid #090909;
-      border-radius: 15px 15px 15px 15px;
-      box-shadow: 2px 2px 2px #04050475 inset, 
-            5px 5px 2px #04050475;
-     word-wrap: break-word;
-     display: block;
    }
 
   .card-light {
-      margin: 0.5em;
-      padding: 0.5em;
       background: #5d5f60;
       border: 3px groove #7d7f76;
-      border-radius: 15px 15px 15px 15px;
-      box-shadow: 2px 2px 2px #04050475 inset, 
-            5px 5px 2px #04050475;
-     word-wrap: break-word;
-      display: block;
   }
 
 
   .card-anvil {
-      margin: 0.5em;
-      padding: 0.5em;
       background: #5d5f6095;
       border: 3px groove #4c5055;
-      border-radius: 15px 15px 15px 15px;
-      box-shadow: 2px 2px 2px #2a2e33 inset, 
-            5px 5px 2px #04050475;
-     word-wrap: break-word;
-      display: block;
   }
 
   .card-standard{
-      margin: 0.5em;
-      padding: 0.5em;
       background: #15111995;
       border: 2px groove #15091c50;
-      border-radius: 15px 15px 15px 15px;
-      box-shadow: 2px 2px 2px #04050475 inset, 
-            5px 5px 2px #04050475;
-     word-wrap: break-word;
-      display: block;
   }
 
   .card-fordave{
-       margin: 0.5em;
-      padding: 0.5em;
       background: #904949;
       border: 1px solid #900000;
-      border-radius: 15px 15px 15px 15px;
-      box-shadow: 2px 2px 2px #04050475 inset, 
-            5px 5px 2px #04050475;
-     word-wrap: break-word;
-      display: block;
    }
 
   .card-zumren{
-       margin: 0.5em;
-      padding: 0.5em;
       background: #4a5b74;
       border: 1px solid #0047ab;
-      border-radius: 15px 15px 15px 15px;
-      box-shadow: 2px 2px 2px #04050475 inset, 
-            5px 5px 2px #04050475;
-     word-wrap: break-word;
-      display: block;
    }
 
      /*PHRASE KEYS*/
 
-.user-css .card-light .phrase-key {
+.user-css .cards .phrase-key {
      background: #04050450;
      font-size: 18px;
      margin: -8px;
@@ -1070,74 +1015,8 @@
      font-weight: 700;
 } 
 
-.user-css .card-ink .phrase-key {
-     background: #04050450;
-     font-size: 18px;
-     margin: -8px;
-     padding: 6px;
-     border-radius: 5px 5px 0px 0px;
-     margin-bottom: 5px;
-     text-align: center;
-     font-weight: 700;
-}
-
-.user-css .card-ceie .phrase-key {
-     background: #04050450;
-     font-size: 18px;
-     margin: -8px;
-     padding: 6px;
-     border-radius: 5px 5px 0px 0px;
-     margin-bottom: 5px;
-     text-align: center;
-     font-weight: 700;
-}
-
-.user-css .card-zumren .phrase-key {
-     background: #04050450;
-     font-size: 18px;
-     margin: -8px;
-     padding: 6px;
-     border-radius: 5px 5px 0px 0px;
-     margin-bottom: 5px;
-     text-align: center;
-     font-weight: 700;
-}
-
-.user-css .card-fordave .phrase-key {
-     background: #04050450;
-     font-size: 18px;
-     margin: -8px;
-     padding: 6px;
-     border-radius: 5px 5px 0px 0px;
-     margin-bottom: 5px;
-     text-align: center;
-     font-weight: 700;
-}
-
-
- .user-css .card-anvil .phrase-key {
-     background: #04050450;
-     font-size: 18px;
-     margin: -8px;
-     padding: 6px;
-     border-radius: 15px 15px 0px 0px;
-     margin-bottom: 5px;
-     text-align: center;
-     font-weight: 700;
-}
 
 .user-css .box-contain .phrase-key {
-     background: #04050450;
-     font-size: 18px;
-     margin: -8px;
-     padding: 6px;
-     border-radius: 5px 5px 0px 0px;
-     margin-bottom: 5px;
-     text-align: center;
-     font-weight: 700;
-}
-
-.user-css .card-standard .phrase-key {
      background: #04050450;
      font-size: 18px;
      margin: -8px;
@@ -1463,4 +1342,3 @@ color:#000;
 .user-css.no-sub-articles .article-horizontal-navigation .glossary-block, .user-css.no-sub-articles .article-horizontal-navigation h3:nth-child(2), .user-css.no-sub-articles .article-horizontal-navigation hr:nth-child(1) {
 display: none!important;
 }
-
