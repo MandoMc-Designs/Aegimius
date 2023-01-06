@@ -14,18 +14,19 @@
       --Shadow: 0px 0px 8px 1px black;
       --Shadow2: 0px 0px 10px 4px black;
       --Shadow3: 0px 0px 12px 5px black;
-			--CEIE-light:#1d0e2495;
-			--CEIE-dark: #15091c;
+      --CEIE-light:#1d0e2495;
+      --CEIE-dark: #15091c;
       --Standard: #15091c75;
-			--Standard-Dark: #15111995;
-			--Ink-light: #2d2d2d;
-			--Ink-dark: #090909;
-			--Chalice-light: #4a5b74;
-			--Chalice-dark: #0047ab;
-			--Fordave-light: #900000;
-			--Fordave-dark: #904949;
-			--Anvil-light: #5d5f6095;
-			--Anvil-Dark:#4c5055;
+      --Standard-Dark: #15111995;
+      --Ink-light: #2d2d2d;
+      --Ink-dark: #090909;
+      --Chalice-light: #4a5b74;
+      --Chalice-dark: #0047ab;
+      --Fordave-light: #900000
+      --Fordave-dark: #904949;
+      --Anvil-light: #5d5f6095;
+      --Anvil-Dark:#4c5055;
+      --Shadow4: #04050475;
       
       --Backgrounds: none;
           --ArticleBackground: url(https://www.worldanvil.com/uploads/images/352626d4390020954eb7187cae14ff40.jpg);
@@ -300,7 +301,7 @@
   
   /*Map Popups*/
  .map-context-user-css .leaflet-popup .leaflet-popup-content-wrapper, .map-context-user-css .leaflet-popup .leaflet-popup-tip {
-    background: #151119;
+    background: var(--Standard-Dark);
     color: silver;
 }
   
@@ -900,9 +901,9 @@
 }
 
 .box-header{
-      background: #151119;
-      border-left: 15px solid #15091c75;
-      border-right: 15px solid #15091c75;
+      background: var(--Standard-Dark);
+      border-left: 15px solid var(--Standard);
+      border-right: 15px solid var(--Standard);
       border-radius: 10px 10px 10px 10px;
       text-align: center;
       text-transform: uppercase;
@@ -922,41 +923,41 @@
 .user-css .box {
       padding: 10px;
       border-radius: 15px 15px 15px 15px;
-      box-shadow: 2px 2px 2px #04050475 inset, 
-            5px 5px 2px #04050475;
+      box-shadow: 2px 2px 2px var(--Shadow4) inset, 
+            5px 5px 2px var(--Shadow4);
       padding-top:
 }
   .box-ceie {
-      background: #1d0e2495;
-      border: 2px groove #15091c;
+      background: var(--CEIE-light);
+      border: 2px groove var(--CEIE-dark);
   } 
 
 
     .box-ink {
-       background: #2d2d2d;
-      border: 2px groove #090909;
+       background: var(--Ink-light);
+      border: 2px groove var(--Ink-dark);
   }
   
 
   .box-zumren {
-      background: #4a5b74;
-      border: 2px groove #0047ab;
+      background: var(--Chalice-light);
+      border: 2px groove var(--Chalice-dark);
   }
   
   .box-fordave {
-      border: 2px groove #900000;
-      background: #904949;
+      border: 2px groove var(--Fordave-light);
+      background: var(--Fordave-dark);
    }
 
 
   .box-standard{
-      border: 2px groove #15091c75;
-      background: #15111995;
+      border: 2px groove var(--Standard);
+      background: var(--Standard-Dark);
   }
 
   .box-anvil{
-      background: #5d5f6095;
-      border: 2px groove #4c5055;
+      background: var(--Anvil-light);
+      border: 2px groove var(--Anvil-Dark);
   }
 
   .codeblock {
@@ -966,7 +967,7 @@
     border-radius: 1em;
     padding: 1em;
     font-size: 14px;
-    box-shadow: 5px 5px 2px #04050475;
+    box-shadow: 5px 5px 2px var(--Shadow4);
 }
 
 /*CARDS*/
@@ -975,20 +976,20 @@
       margin: 0.5em;
       padding: 0.5em;
       border-radius: 15px 15px 15px 15px;
-      box-shadow: 2px 2px 2px #04050475 inset, 
-            5px 5px 2px #04050475;
+      box-shadow: 2px 2px 2px var(--Shadow4) inset, 
+            5px 5px 2px var(--Shadow4);
      word-wrap: break-word;
       display: block;
 }
 
   .card-ceie {
-      background: #1d0e2495;
-      border: 1px solid #15091c;
+      background: var(--CEIE-light);
+      border: 1px solid var(--CEIE-Dark);
    }
 
     .card-ink {
-      background: #2d2d2d;
-      border: 1px solid #090909;
+      background: var(--Ink-light);
+      border: 1px solid var(--Ink-dark);
    }
 
   .card-light {
@@ -998,29 +999,29 @@
 
 
   .card-anvil {
-      background: #5d5f6095;
-      border: 3px groove #4c5055;
+      background: var(--Anvil-light);
+      border: 3px groove var(--Anvil-Dark);
   }
 
   .card-standard{
-      background: #15111995;
-      border: 2px groove #15091c50;
+      background: var(--Standard-Dark);
+      border: 2px groove var(--Standard);
   }
 
   .card-fordave{
-      background: #904949;
-      border: 1px solid #900000;
+      background: var(--Fordave-Dark);
+      border: 1px solid var(--Fordave-light);
    }
 
   .card-zumren{
-      background: #4a5b74;
-      border: 1px solid #0047ab;
+      background: var(--Chalice-light);
+      border: 1px solid var(--Chalice-dark);
    }
 
      /*PHRASE KEYS*/
 
 .user-css .cards .phrase-key {
-     background: #04050450;
+     background: var(--Shadow4);
      font-size: 18px;
      margin: -8px;
      padding: 6px;
@@ -1032,7 +1033,7 @@
 
 
 .user-css .box-contain .phrase-key {
-     background: #04050450;
+     background: var(--Shadow4);
      font-size: 18px;
      margin: -8px;
      padding: 6px;
@@ -1137,7 +1138,7 @@
 }
 
 .user-css .thales-cell:nth-child(7){
-    color: #900000;
+    color: var(--Fordave-light);
     font-weight:bold;
     font-size: 1.2em;
 }
@@ -1170,7 +1171,7 @@
    --TableCellPlaceholderColor: #959690;
    --TableCellPadding: 10px 10px;
    --TableCellBackgroundHover: transparent;
-   --TableCellBorder: 1px solid #1d0e24;
+   --TableCellBorder: 1px solid var(--CEIE-light);
 }
 
 
@@ -1226,7 +1227,7 @@
 }
 
 .user-css-calendar .calendar-nav .nav-item a:hover {
-    background-color: darkred !important;
+    background-color: var(--HallowDarkBlue) !important;
     border-radius: 0px;
     color: white;
     font-weight: bold;
@@ -1277,7 +1278,7 @@
 }
 
 .user-css-calendar .table tr:hover {
-  background: #151119;
+  background: var(--Standard-Dark);
 }
 .user-css-calendar .table {
   border-collapse: inherit;
@@ -1357,5 +1358,3 @@ color:#000;
 .user-css.no-sub-articles .article-horizontal-navigation .glossary-block, .user-css.no-sub-articles .article-horizontal-navigation h3:nth-child(2), .user-css.no-sub-articles .article-horizontal-navigation hr:nth-child(1) {
 display: none!important;
 }
-
-
