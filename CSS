@@ -98,7 +98,7 @@
   }
   
    .map-context-user-css .marker-content a {
-      color: var(--Linkcolor) !important;
+      color: var(--LinkColor) !important;
 }
 
   .user-css em,
@@ -435,66 +435,51 @@
   top: -10px;
   }
   
-  /* === SIDEBAR BASE === */
+ /* === HEADER BASE === */
   
-  .navigation-sidebar {
-      display: block;
-      position: fixed;
+  .navigation-header {
+      position: absolute;
       top: 0;
-      left: 0;
       background: black;
-      width: 60px;
-      height: 100%;
-      padding-top: 50px;
+      width: 100%;
+      height: 5em;
+      padding-left: 2em;
+      padding-top: .5em;
+      padding-right: 2em;
       z-index: 100;
-      transition: width 0.2s linear;
+      transition: height 0.2s linear;
   }
+ 
+.navigation-header ul {
+   list-style-type: none;
+   margin: 0;
+   padding: 0; 
+   overflow: hidden;
+}
+
+ .navigation-header li {
+     display:  inline-block;
+     padding: .5em;
+}
   
-  .navigation-sidebar:hover {
-      width: 240px;
-      transition: all 0.2s linear;
-  }
-  
-  .navigation-sidebar:after {
-      content: url(/uploads/images/26f9f6dfd2ab04b111c402885fc562bb.png);
-      display: block;
-      position:absolute;
-      top: 0px;
-      left: 60px;
-      filter: brightness(0);
-      transition: left 0.2s linear;
-  }
-  
-  .navigation-sidebar:hover:after {
-      left: 240px;
-      transition: left 0.2s linear;
-  }
-  
-  .navigation-sidebar .navigation-link {
-      text-align: left;
-      left: 0px;
-      padding-left: 10px;
+
+  .navigation-header .navigation-link {
+      text-align: center;
       height: 44px;
       filter: grayscale(100%) brightness(130%);
   }
   
-  .navigation-sidebar .navigation-link:hover {
-      filter: grayscale(0%) brightness(100%);
-  }
   
   .navigation-link a {
       color: var(--Purple) !important;
   }
   
-  .navigation-link a:hover {
-      color: var(--Purple) !important;
-  }
-  
-  .navigation-sidebar .navigation-link p {
+
+  .navigation-header .navigation-link p {
       color: var(--Purple);
       height: 0px;
       display: inline-block;
-      vertical-align: middle;
+      vertical-align: center;
       font-family: Lora;
       font-size: 0px;
       margin-bottom: 16px;
@@ -502,51 +487,37 @@
       filter: brightness(0%);
   }
   
-  .navigation-sidebar:hover .navigation-link p {
-      height: 24px;
-      display: inline-block;
-      vertical-align: middle;
-      font-size: 19px !important;
-      filter: brightness(100%);
-      transition: all 0.2s ease-in;
-  }
   
   .navigation-link .fa-duotone,
   .navigation-link .fa-brands {
       margin-right: 14px;
       font-size: 30px;
   }
+   
+
+   .navigation-mobile {
+     display: none;
+}
   
   /* Navigation Sidebar for Mobile */
   
   @media (max-width: 1000px) { 
-      .navigation-sidebar {
+        .navigation-mobile {
+         display: none;
+     }
+
+      .navigation-header{
           background: black;
-          width: 50px;
-          height: 100%;
-          padding-top: 30px;
+          width: 100%;
+          height: 5em;
+          padding-top: .5em;
           transition: width 0.2s linear;
           border-right: 6px solid var(--Purple);
       }
   
-      .navigation-sidebar:hover {
-          width: 150px;
-          transition: all 0.2s linear;
-      }
-  
-      .navigation-sidebar:after {
-          display: none;
-      }
-  
-      .navigation-sidebar .navigation-link {
+       .navigation-header.navigation-link {
           padding-left: 8px;
-          height: 40px;
-      }
-  
-      .navigation-sidebar:hover .navigation-link p {
-          height: 16px;
-          font-size: 14px !important;
-          margin-bottom: 12px;
+          height: 28px;
       }
   
       .navigation-link .fa-duotone,
@@ -557,9 +528,33 @@
   }
   
   @media (max-width: 780px) { 
-      .navigation-sidebar {
-          display: none;
+       .navigation-header {
+         display: none;
+        }     
+
+      .navigation-mobile {
+         background: black;
+         padding-top: .125em;
       }
+
+       .navigation-mobile ul {
+          list-style-type: none;
+          margin: 0;
+          padding: 0; 
+       }
+
+       .navigation-mobile li a {
+          display:  block;
+          padding: 2px 10px;
+         }
+  
+
+       .navigation-mobile .navigation-link {
+          text-align: center;
+          height: 10px;
+          filter: grayscale(100%) brightness(130%);
+        }
+  
   }
   
   /* Buttons */
@@ -1345,6 +1340,3 @@ color:#000;
 .user-css.no-sub-articles .article-horizontal-navigation .glossary-block, .user-css.no-sub-articles .article-horizontal-navigation h3:nth-child(2), .user-css.no-sub-articles .article-horizontal-navigation hr:nth-child(1) {
 display: none!important;
 }
-
-
-
