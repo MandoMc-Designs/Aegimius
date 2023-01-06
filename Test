@@ -433,8 +433,8 @@
   /* === World Editor Bar === */
   
   .navbar {
-      margin-top: 18px !important;
-      padding-left: 80px;
+      margin-top: 3em !important;
+      padding-left: 5em;
   }
   
   #world-editor-bar {
@@ -448,66 +448,51 @@
   top: -10px;
   }
   
-  /* === SIDEBAR BASE === */
+ /* === HEADER BASE === */
   
-  .navigation-sidebar {
-      display: block;
-      position: fixed;
+  .navigation-header {
+      position: absolute;
       top: 0;
-      left: 0;
       background: black;
-      width: 60px;
-      height: 100%;
-      padding-top: 50px;
+      width: 100%;
+      height: 5em;
+      padding-left: 2em;
+      padding-top: .5em;
+      padding-right: 2em;
       z-index: 100;
-      transition: width 0.2s linear;
+      transition: height 0.2s linear;
   }
+ 
+.navigation-header ul {
+   list-style-type: none;
+   margin: 0;
+   padding: 0; 
+   overflow: hidden;
+}
+
+ .navigation-header li {
+     display:  inline-block;
+     padding: .5em;
+}
   
-  .navigation-sidebar:hover {
-      width: 240px;
-      transition: all 0.2s linear;
-  }
-  
-  .navigation-sidebar:after {
-      content: url(/uploads/images/26f9f6dfd2ab04b111c402885fc562bb.png);
-      display: block;
-      position:absolute;
-      top: 0px;
-      left: 60px;
-      filter: brightness(0);
-      transition: left 0.2s linear;
-  }
-  
-  .navigation-sidebar:hover:after {
-      left: 240px;
-      transition: left 0.2s linear;
-  }
-  
-  .navigation-sidebar .navigation-link {
-      text-align: left;
-      left: 0px;
-      padding-left: 10px;
+
+  .navigation-header .navigation-link {
+      text-align: center;
       height: 44px;
       filter: grayscale(100%) brightness(130%);
   }
   
-  .navigation-sidebar .navigation-link:hover {
-      filter: grayscale(0%) brightness(100%);
-  }
   
   .navigation-link a {
       color: var(--Purple) !important;
   }
   
-  .navigation-link a:hover {
-      color: var(--Purple) !important;
-  }
-  
-  .navigation-sidebar .navigation-link p {
+
+  .navigation-header .navigation-link p {
       color: var(--Purple);
       height: 0px;
       display: inline-block;
-      vertical-align: middle;
+      vertical-align: center;
       font-family: Lora;
       font-size: 0px;
       margin-bottom: 16px;
@@ -515,51 +500,37 @@
       filter: brightness(0%);
   }
   
-  .navigation-sidebar:hover .navigation-link p {
-      height: 24px;
-      display: inline-block;
-      vertical-align: middle;
-      font-size: 19px !important;
-      filter: brightness(100%);
-      transition: all 0.2s ease-in;
-  }
   
   .navigation-link .fa-duotone,
   .navigation-link .fa-brands {
       margin-right: 14px;
       font-size: 30px;
   }
+   
+
+   .navigation-mobile {
+     display: none;
+}
   
   /* Navigation Sidebar for Mobile */
   
   @media (max-width: 1000px) { 
-      .navigation-sidebar {
+        .navigation-mobile {
+         display: none;
+     }
+
+      .navigation-header{
           background: black;
-          width: 50px;
-          height: 100%;
-          padding-top: 30px;
+          width: 100%;
+          height: 5em;
+          padding-top: .5em;
           transition: width 0.2s linear;
           border-right: 6px solid var(--Purple);
       }
   
-      .navigation-sidebar:hover {
-          width: 150px;
-          transition: all 0.2s linear;
-      }
-  
-      .navigation-sidebar:after {
-          display: none;
-      }
-  
-      .navigation-sidebar .navigation-link {
+       .navigation-header.navigation-link {
           padding-left: 8px;
-          height: 40px;
-      }
-  
-      .navigation-sidebar:hover .navigation-link p {
-          height: 16px;
-          font-size: 14px !important;
-          margin-bottom: 12px;
+          height: 28px;
       }
   
       .navigation-link .fa-duotone,
@@ -570,11 +541,34 @@
   }
   
   @media (max-width: 780px) { 
-      .navigation-sidebar {
-          display: none;
+       .navigation-header {
+         display: none;
+        }     
+
+      .navigation-mobile {
+         background: black;
+         padding-top: .125em;
       }
-  }
+
+       .navigation-mobile ul {
+          list-style-type: none;
+          margin: 0;
+          padding: 0; 
+       }
+
+       .navigation-mobile li a {
+          display:  block;
+          padding: 2px 10px;
+         }
   
+
+       .navigation-mobile .navigation-link {
+          text-align: center;
+          height: 10px;
+          filter: grayscale(100%) brightness(130%);
+        }
+  
+  }
   /* Buttons */
   .user-css :is(.btn-primary, .btn-danger, .btn-info, .btn-success),
   .user-css-extended :is(.btn-primary, .btn-danger, .btn-info, .btn-success),
@@ -692,19 +686,6 @@
       text-shadow: none !important;
   }
   
-  .paper-dark :is(h1, h2, h3, h4, h5) {
-      margin-top: 0px;
-      margin-bottom: 2px;
-      padding-top: 0px;
-      border: 0px solid;
-      background-image: linear-gradient(
-          to right,
-          #b2b2b2 0%,
-          #b2b2b2 100%
-      );
-      text-shadow: none !important;
-  }
-  
   .paper {
       color: black !important;
       font-size: 20px;
@@ -728,12 +709,6 @@
       color: #000000 !important;
       font-size: 20px;
       text-shadow: 1px 1px 2px rgba(106, 48, 48, 0.8);
-  }
-  
-  .paper-dark {
-      color: #b2b2b2 !important;
-      font-size: 20px;
-      text-shadow: 1px 1px 2px rgba(200, 200, 200, 0.5);
   }
   
   /* 300 by 200 */
@@ -773,80 +748,7 @@
       overflow: auto;
   }
   
-  /* 400 by 600 */
-  
-  .paper-light-400-600 {
-      width: 400px;
-      height: 600px;
-      background: url(https://www.worldanvil.com/uploads/images/772d1d8946751dc63cdd8f965a8d9a77.png);
-      padding: 16px;
-      overflow: auto;
-  }
-  
-  .paper-dark-400-600 {
-      width: 400px;
-      height: 600px;
-      background: url(https://www.worldanvil.com/uploads/images/4ae3c49958348835ad738afcbce0461d.png);
-      padding: 16px;
-      overflow: auto;
-  }
-  
-  /* 800 by 250 */
-  
-  .paper-light-800-250 {
-      width: 800px;
-      height: 250px;
-      background: url(https://www.worldanvil.com/uploads/images/8d40bc747c74e6f27352bf0374739129.png);
-      padding: 16px;
-      overflow: auto;
-  }
-  
-  .paper-red-800-250 {
-      width: 800px;
-      height: 250px;
-      background: url(https://www.worldanvil.com/uploads/images/b7a4bc68077bcf734def3a27d990158c.png);
-      padding: 16px;
-      overflow: auto;
-  }
-  
-  
-  /* 800 by 400 */
-  
-  .paper-light-800-400 {
-      width: 800px;
-      height: 400px;
-      background: url(https://www.worldanvil.com/uploads/images/3a3140c85c4743430385f5deb8563005.png);
-      padding: 16px;
-      overflow: auto;
-  }
-  
-  .paper-dark-800-400 {
-      width: 800px;
-      height: 400px;
-      background: url(https://www.worldanvil.com/uploads/images/23ddb5c7a1924c4aa655b6d058af6bdc.png);
-      padding: 16px;
-      overflow: auto;
-  }
-  
-  /* 1250 by 250 */
-  
-  .paper-light-1200-250 {
-      width: 1200px;
-      height: 250px;
-      background: url(https://www.worldanvil.com/uploads/images/41287327d123606ea52c4a6a309cc1e7.png);
-      padding: 32px;
-      margin-left: -45px;
-      overflow: auto;
-  }
-  
-  .paper-tan-1200-250 {
-      width: 1200px;
-      height: 250px;
-      background: url(https://www.worldanvil.com/uploads/images/a260f0622201171eddae3bd6e6a56e73.png);
-      padding: 32px;
-      margin-left: -45px;
-      overflow: auto;
-  }
+
 
   /* CONTAINERS*/
  
