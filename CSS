@@ -379,9 +379,7 @@
       border-left: 15px solid black;
       border-radius: 15px 15px 15px 15px
   }
-  
-
-  
+    
   
   /* Quote */
   .user-css-presentation blockquote,
@@ -395,6 +393,7 @@
       border: 6px double rgba(0, 0, 0, 0.6);
       border-radius: 0;
       box-shadow: none;
+      position: relative;
   }
 
 .user-css-presentation blockquote .author, .tooltipster-content blockquote .author, .user-css-map-sidebar blockquote .author, .map-context-user-css  blockquote
@@ -926,6 +925,7 @@
       border-radius: 15px 15px 15px 15px;
       box-shadow: 2px 2px 2px #04050475 inset, 
             5px 5px 2px #04050475;
+      padding-top:
 }
   .box-ceie {
       background: #1d0e2495;
@@ -933,8 +933,8 @@
   } 
 
 
-    .box-ink {
-       background: #2d2d2d;
+  .box-ink {
+      background: #2d2d2d;
       border: 2px groove #090909;
   }
   
@@ -974,7 +974,7 @@
      background-color: #5d5f60;
      border: .25em inset #7d7f76; 
      padding: 1em;
-     Box-shadow: 5px 5px 2px #04050475;
+     Box-shadow 5px 5px 2px #04050475;
    }
 
 .user-css .box-paperclip {
@@ -990,8 +990,8 @@ content:
 url(https://www.worldanvil.com/uploads/images/d5e13ed61a97ade0d9f9a242602da9fd.webp);
       transform: scale(0.09);
       position: absolute;
-      top: -413px;
-      left: -150px;
+      top: -25.8rem;
+      left: -10rem;
 }
 
 .user-css .box-paperclip blockquote::before {
@@ -999,7 +999,7 @@ content:
 url(https://www.worldanvil.com/uploads/images/d5e13ed61a97ade0d9f9a242602da9fd.webp);
       transform: scale(0.09);
       position: absolute;
-      top: -423px;
+      top: -26.7rem;
       right: 0px;
 }
 
@@ -1008,8 +1008,8 @@ content:
 url(https://www.worldanvil.com/uploads/images/5c13936d953b575e3b8fb252969c42a4.webp);
       transform: scale(0.04);
       position: absolute;
-      top: -800px;
-      left: -875px;
+      top: -50rem;
+      left: -55rem;
 }
 
 /*CARDS*/
@@ -1441,7 +1441,7 @@ display: none!important;
 
 /*World Navigiation*/
 .user-css#world-navigation-sidebar{ 
-     background:#1d0e24;
+     background:var(--Ink-dark);
 }
 .user-css#world-navigation-sidebar .p-20{ 
      color: silver;
