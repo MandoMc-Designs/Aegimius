@@ -327,6 +327,11 @@
      border: 3px solid var(--CEIE-dark);
      color: silver
 }
+
+/*Embeded Map*/
+   .user-css .map-included{
+     z-index:0;
+    }
   
   /* Article Structure */
   /* Bread Crumb */
@@ -379,7 +384,9 @@
       border-left: 15px solid black;
       border-radius: 15px 15px 15px 15px
   }
-    
+  
+
+  
   
   /* Quote */
   .user-css-presentation blockquote,
@@ -558,7 +565,6 @@
           font-size: 20px;
       }
   }
-
 
   
   @media (max-width: 780px) { 
@@ -843,47 +849,47 @@
 
   /* CONTAINERS*/
  
-.box-grid {
+.user-css .box-grid {
     Background: transparent;
-    display: grid !important;
+    display: grid;
     grid-auto-rows: minmax (0px, auto);
     grid-template-columns: repeat(2, 1fr);
     gap: 13px; 
 }
 
-.box-grid-full {
+.user-css .box-grid-full {
     Background: transparent;
-    display: grid !important;
+    display: grid;
     grid-auto-rows: minmax (0px, auto);
     grid-template-columns: repeat(3, 1fr);
     gap: 20px; 
 }
 
-.box-grid-four {
+.user-css .box-grid-four {
     Background: transparent;
-    display: grid !important;
+    display: grid;
     grid-auto-rows: minmax (0px, auto);
     grid-template-columns: repeat(4, 1fr);
     gap: 20px; 
 }
 
-.box-grid-flex {
-     display: flex !important;
+.user-css .box-grid-flex {
+     display: flex ;
      flex-wrap: wrap;
      gap: 1em;
 }
 
-.box-grid-flex *{
+ .user-css .box-grid-flex *{
      flex: 1 1 15em;
 }
-  .box-newspaper{
+  .user-css .box-newspaper{
       padding: 12px;
       background: transparent;
       column-count:2;
       column-rule: 1px dashed white;
 }
  
-  .quote-author{
+   .user-css .quote-author{
       padding-right: 35px;
       background: transparent;
       text-align: right;
@@ -893,7 +899,7 @@
       display:block;
 }
 
-.box-header{
+ .user-css .box-header{
       background: #151119;
       border-left: 15px solid #15091c75;
       border-right: 15px solid #15091c75;
@@ -902,14 +908,14 @@
       text-transform: uppercase;
   }
 
-.box-header-2{
+ .user-css .box-header-2{
     background: transparent; 
      border-bottom: 15px solid transparent;
      border-image: url(https://www.worldanvil.com/uploads/images/fd944db6efeaeaa53bb824109a481cf7.webp) 75 round;
       text-transform: uppercase;
 }
 
-  .box-contain {
+ .user-css .box-contain {
     margin: 5px;
     border-radius: 0px 15px 0px 15px;
     padding: 10px;
@@ -927,40 +933,40 @@
             5px 5px 2px #04050475;
       padding-top:
 }
-  .box-ceie {
+   .user-css .box-ceie {
       background: #1d0e2495;
       border: 2px groove #15091c;
   } 
 
 
-  .box-ink {
-      background: #2d2d2d;
+  .user-css  .box-ink {
+       background: #2d2d2d;
       border: 2px groove #090909;
   }
   
 
-  .box-zumren {
+ .user-css .box-zumren {
       background: #4a5b74;
       border: 2px groove #0047ab;
   }
   
-  .box-fordave {
+  .user-css .box-fordave {
       border: 2px groove #900000;
       background: #904949;
    }
 
 
-  .box-standard{
+ .user-css  .box-standard{
       border: 2px groove #15091c75;
       background: #15111995;
   }
 
-  .box-anvil{
+ .user-css  .box-anvil{
       background: #5d5f6095;
       border: 2px groove #4c5055;
   }
 
-  .codeblock {
+  .user-css .codeblock {
     background-color: #111111;
     color: #644b83;
     border: none;
@@ -970,11 +976,11 @@
     box-shadow: 5px 5px 2px #04050475;
 }
 
-.bevel {
+ .user-css .bevel {
      background-color: #5d5f60;
      border: .25em inset #7d7f76; 
      padding: 1em;
-     Box-shadow 5px 5px 2px #04050475;
+     box-shadow: 5px 5px 2px #04050475;
    }
 
 .user-css .box-paperclip {
@@ -1012,6 +1018,17 @@ url(https://www.worldanvil.com/uploads/images/5c13936d953b575e3b8fb252969c42a4.w
       left: -55rem;
 }
 
+.user-css .context {
+      margin: 0.5em;
+      padding: 0.5em;
+      border-radius: 15px 15px 15px 15px;
+      box-shadow: 2px 2px 2px #04050475 inset, 
+            5px 5px 2px #04050475;
+     word-wrap: break-word;
+     display: block;
+}
+
+
 /*CARDS*/
 
 .user-css .cards {
@@ -1047,49 +1064,60 @@ url(https://www.worldanvil.com/uploads/images/5c13936d953b575e3b8fb252969c42a4.w
      
 }
 
-  .card-ceie {
+ .user-css .card-ceie {
       background: #1d0e2495;
       border: 3px solid #15091c;
    }
 
-    .card-ink {
+   .user-css  .card-ink {
       background: #2d2d2d;
       border: 3px solid #090909;
    }
 
-  .card-light {
+ .user-css  .card-light {
       background: #5d5f60;
       border: 3px groove #7d7f76;
   }
 
-
-  .card-anvil {
+ .user-css  .card-anvil {
       background: #5d5f6095;
       border: 3px groove #4c5055;
   }
 
-  .card-standard{
+ .user-css  .card-standard{
       background: #15111995;
       border: 3px groove #15091c50;
   }
 
-  .card-fordave{
+ .user-css  .card-fordave{
       background: #904949;
       border: 3px solid #900000;
    }
 
-  .card-zumren{
+  .user-css .card-zumren{
       background: #4a5b74;
       border: 3px solid #0047ab;
    }
 
      /*PHRASE KEYS*/
 
-.user-css .cards .phrase-key, .box-contain .phrase-key {
+.user-css .cards .phrase-key, .box-contain .phrase-key{
      background: #04050450;
      font-size: 18px;
      margin: -8px;
      padding: 6px;
+     border-radius: 5px 5px 0px 0px;
+     margin-bottom: 5px;
+     text-align: center;
+     font-weight: 700;
+} 
+
+.user-css .context .phrase-key {
+     background: #04050450;
+     font-size: 18px;
+     margin: -8px;
+     padding: 6px;
+     margin-left: -3.2em;
      border-radius: 5px 5px 0px 0px;
      margin-bottom: 5px;
      text-align: center;
@@ -1117,6 +1145,16 @@ url(https://www.worldanvil.com/uploads/images/5c13936d953b575e3b8fb252969c42a4.w
      font-weight: 700;
 } 
 
+.user-css .icon-padding {
+ position: relative;
+ padding: 0.5em 0.5em 0.5em 3.2em;
+}
+
+.user-css .corner-icon {
+ position: absolute;
+ left: 0.25em;
+ top: 0.25em;
+}
 
  
   /* Timeline */
@@ -1441,7 +1479,7 @@ display: none!important;
 
 /*World Navigiation*/
 .user-css#world-navigation-sidebar{ 
-     background:var(--Ink-dark);
+     background: var(--Ink-dark);
 }
 .user-css#world-navigation-sidebar .p-20{ 
      color: silver;
@@ -1476,3 +1514,7 @@ display: none!important;
 .bar-90 { width: 90%;} 
 .bar-95 { width: 95%;} 
 .bar-100 { width: 100%;}
+
+.user-css-extended .metadata-value .explorer-tag {
+     background: var(--CEIE-dark);
+}
