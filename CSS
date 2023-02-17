@@ -22,7 +22,7 @@
       --Ink-dark: #090909;
       --Chalice-light: #4a5b74;
       --Chalice-dark: #0047ab;
-      --Fordave-light: #900000
+      --Fordave-light: #900000;
       --Fordave-dark: #904949;
       --Anvil-light: #5d5f6095;
       --Anvil-Dark:#4c5055;
@@ -678,7 +678,7 @@
 
   /* All the Dumb Paper */
   
-  .paper :is(h1, h2, h3, h4, h5) {
+  .user-css .paper :is(h1, h2, h3, h4, h5) {
       margin-top: 0px;
       margin-bottom: 2px;
       padding-top: 0px;
@@ -691,7 +691,7 @@
       text-shadow: none !important;
   }
   
-  .paper-dark :is(h1, h2, h3, h4, h5) {
+ .user-css .paper-dark :is(h1, h2, h3, h4, h5) {
       margin-top: 0px;
       margin-bottom: 2px;
       padding-top: 0px;
@@ -704,32 +704,31 @@
       text-shadow: none !important;
   }
   
-  .paper {
+ .user-css .paper {
       color: black !important;
       font-size: 20px;
       text-shadow: 1px 1px 2px rgba(200, 200, 200, 0.8);
   }
   
-  
-  .paper-light {
+.user-css .paper-light {
       color: black !important;
       font-size: 20px;
       text-shadow: 1px 1px 2px rgba(100, 100, 100, 0.9);
   }
   
-  .paper-tan {
+  .user-css .paper-tan {
       color: black !important;
       font-size: 20px;
       text-shadow: 1px 1px 2px rgba(100, 100, 100, 0.9);
   }
   
-  .paper-red {
+  .user-css .paper-red {
       color: #000000 !important;
       font-size: 20px;
       text-shadow: 1px 1px 2px rgba(106, 48, 48, 0.8);
   }
   
-  .paper-dark {
+ .user-css .paper-dark {
       color: #b2b2b2 !important;
       font-size: 20px;
       text-shadow: 1px 1px 2px rgba(200, 200, 200, 0.5);
@@ -737,7 +736,7 @@
   
   /* 300 by 200 */
   
-  .paper-light-300-200 {
+  .user-css .paper-light-300-200 {
       width: 300px;
       height: 200px;
       background: url(https://www.worldanvil.com/uploads/images/f0ffbf4e19ea2f405f6d94a29d2eb32c.png);
@@ -745,7 +744,7 @@
      overflow: auto;
   }
   
-  .paper-tan-300-200 {
+ .user-css .paper-tan-300-200 {
       width: 300px;
       height: 200px;
       background: url(https://www.worldanvil.com/uploads/images/54996a5e8e9180abdc752c6e8b086585.png);
@@ -755,16 +754,15 @@
   
   /* 400 by 400 */
   
-  .paper-tan-400-400 {
+ .user-css .paper-tan-400-400 {
       width: 400px;
       height: 400px;
       background: url(https://www.worldanvil.com/uploads/images/e6dffa9dfd347f59d130df5405a83fc0.png);
       padding: 16px;
       overflow: auto;
-
   }
   
-  .paper-red-400-400 {
+.user-css .paper-red-400-400 {
       width: 400px;
       height: 400px;
       background: url(https://www.worldanvil.com/uploads/images/4f76fa6073e8968106dee98d35300437.png);
@@ -774,7 +772,7 @@
   
   /* 400 by 600 */
   
-  .paper-light-400-600 {
+  .user-css .paper-light-400-600 {
       width: 400px;
       height: 600px;
       background: url(https://www.worldanvil.com/uploads/images/772d1d8946751dc63cdd8f965a8d9a77.png);
@@ -782,7 +780,7 @@
       overflow: auto;
   }
   
-  .paper-dark-400-600 {
+  .user-css .paper-dark-400-600 {
       width: 400px;
       height: 600px;
       background: url(https://www.worldanvil.com/uploads/images/4ae3c49958348835ad738afcbce0461d.png);
@@ -792,7 +790,7 @@
   
   /* 800 by 250 */
   
-  .paper-light-800-250 {
+  .user-css .paper-light-800-250 {
       width: 800px;
       height: 250px;
       background: url(https://www.worldanvil.com/uploads/images/8d40bc747c74e6f27352bf0374739129.png);
@@ -800,7 +798,7 @@
       overflow: auto;
   }
   
-  .paper-red-800-250 {
+  .user-css .paper-red-800-250 {
       width: 800px;
       height: 250px;
       background: url(https://www.worldanvil.com/uploads/images/b7a4bc68077bcf734def3a27d990158c.png);
@@ -811,7 +809,7 @@
   
   /* 800 by 400 */
   
-  .paper-light-800-400 {
+ .user-css .paper-light-800-400 {
       width: 800px;
       height: 400px;
       background: url(https://www.worldanvil.com/uploads/images/3a3140c85c4743430385f5deb8563005.png);
@@ -819,7 +817,7 @@
       overflow: auto;
   }
   
-  .paper-dark-800-400 {
+  .user-css .paper-dark-800-400 {
       width: 800px;
       height: 400px;
       background: url(https://www.worldanvil.com/uploads/images/23ddb5c7a1924c4aa655b6d058af6bdc.png);
@@ -829,7 +827,7 @@
   
   /* 1250 by 250 */
   
-  .paper-light-1200-250 {
+ .user-css .paper-light-1200-250 {
       width: 1200px;
       height: 250px;
       background: url(https://www.worldanvil.com/uploads/images/41287327d123606ea52c4a6a309cc1e7.png);
@@ -838,7 +836,7 @@
       overflow: auto;
   }
   
-  .paper-tan-1200-250 {
+  .user-css .paper-tan-1200-250 {
       width: 1200px;
       height: 250px;
       background: url(https://www.worldanvil.com/uploads/images/a260f0622201171eddae3bd6e6a56e73.png);
@@ -846,6 +844,38 @@
       margin-left: -45px;
       overflow: auto;
   }
+
+.user-css .parchment-dark {
+    border-style: solid;
+    border-width: 30px;
+    box-shadow: none;
+    -moz-border-image: url(https://www.worldanvil.com/uploads/images/a83543dd99f9d4a756b52598d2d4db96.webp) 10% 10% 10% 10% repeat;
+    -webkit-border-image: url(https://www.worldanvil.com/uploads/images/a83543dd99f9d4a756b52598d2d4db96.webp) 10% 10% 10% 10% repeat;
+    -o-border-image: url(https://www.worldanvil.com/uploads/images/a83543dd99f9d4a756b52598d2d4db96.webp) 10% 10% 10% 10% repeat;
+    border-image: url(https://www.worldanvil.com/uploads/images/a83543dd99f9d4a756b52598d2d4db96.webp) 10% 10% 10% 10% repeat;
+    background-clip: padding-box !important;
+    background: url(https://www.worldanvil.com/uploads/images/a83543dd99f9d4a756b52598d2d4db96.webp) center;
+    background-size: 75em;
+    padding: 8px !important;
+}
+
+.user-css .parchment-light {
+    border-style: solid;
+    border-width: 30px;
+    box-shadow: none;
+    -moz-border-image: url(https://www.worldanvil.com/uploads/images/4ac06bd9a3d852894dd08cc94b19ae18.webp) 15% 15% 15% 15% repeat;
+    -webkit-border-image: url(https://www.worldanvil.com/uploads/images/4ac06bd9a3d852894dd08cc94b19ae18.webp) 15% 15% 15% 15% repeat;
+    -o-border-image: url(https://www.worldanvil.com/uploads/images/4ac06bd9a3d852894dd08cc94b19ae18.webp) 15% 15% 15% 15% repeat;
+    border-image: url(https://www.worldanvil.com/uploads/images/4ac06bd9a3d852894dd08cc94b19ae18.webp) 10% 15% 15% 10% repeat;
+    background-clip: padding-box !important;
+    background: url(https://www.worldanvil.com/uploads/images/4ac06bd9a3d852894dd08cc94b19ae18.webp) center;
+    background-size: 75em;
+    padding: 8px !important;
+}
+
+.user-css .parchment-light.paper-light :is(p, .paragraph-indent){
+  color: black;
+}
 
   /* CONTAINERS*/
  
@@ -919,7 +949,7 @@
     margin: 5px;
     border-radius: 0px 15px 0px 15px;
     padding: 10px;
-    background: transparent
+    background: transparent;
   }
 
 .user-css .img-rotate{
@@ -928,109 +958,10 @@
 
 .user-css .box {
       padding: 10px;
-      border-radius: 15px 15px 15px 15px;
+      border-radius: 25px 5px 25px 5px;
       box-shadow: 2px 2px 2px #04050475 inset, 
             5px 5px 2px #04050475;
-      padding-top:
 }
-   .user-css .box-ceie {
-      background: #1d0e2495;
-      border: 2px groove #15091c;
-  } 
-
-
-  .user-css  .box-ink {
-       background: #2d2d2d;
-      border: 2px groove #090909;
-  }
-  
-
- .user-css .box-zumren {
-      background: #4a5b74;
-      border: 2px groove #0047ab;
-  }
-  
-  .user-css .box-fordave {
-      border: 2px groove #900000;
-      background: #904949;
-   }
-
-
- .user-css  .box-standard{
-      border: 2px groove #15091c75;
-      background: #15111995;
-  }
-
- .user-css  .box-anvil{
-      background: #5d5f6095;
-      border: 2px groove #4c5055;
-  }
-
-  .user-css .codeblock {
-    background-color: #111111;
-    color: #644b83;
-    border: none;
-    border-radius: 1em;
-    padding: 1em;
-    font-size: 14px;
-    box-shadow: 5px 5px 2px #04050475;
-}
-
- .user-css .bevel {
-     background-color: #5d5f60;
-     border: .25em inset #7d7f76; 
-     padding: 1em;
-     box-shadow: 5px 5px 2px #04050475;
-   }
-
-.user-css .box-paperclip {
-  position: relative;
-}
-
-.user-css .wax-seal {
-  position: relative;
-}
-
-.user-css .box-paperclip .paper::before {
-content: 
-url(https://www.worldanvil.com/uploads/images/d5e13ed61a97ade0d9f9a242602da9fd.webp);
-      transform: scale(0.09);
-      position: absolute;
-      top: -25.8rem;
-      left: -10rem;
-}
-
-.user-css .box-paperclip blockquote::before {
-content: 
-url(https://www.worldanvil.com/uploads/images/d5e13ed61a97ade0d9f9a242602da9fd.webp);
-      transform: scale(0.09);
-      position: absolute;
-      top: -26.7rem;
-      right: 0px;
-}
-
-.user-css .wax-seal .paper::before {
-content: 
-url(https://www.worldanvil.com/uploads/images/5c13936d953b575e3b8fb252969c42a4.webp);
-      transform: scale(0.04);
-      position: absolute;
-      top: -50rem;
-      left: -55rem;
-}
-
-.user-css .context {
-      margin: 0.5em;
-      padding: 0.5em;
-      border-radius: 15px 15px 15px 15px;
-      box-shadow: 2px 2px 2px #04050475 inset, 
-            5px 5px 2px #04050475;
-     word-wrap: break-word;
-     display: block;
-}
-
-
-/*CARDS*/
-
 .user-css .cards {
       margin: 0.5em;
       padding: 0.5em;
@@ -1061,8 +992,48 @@ url(https://www.worldanvil.com/uploads/images/5c13936d953b575e3b8fb252969c42a4.w
      word-wrap: break-word;
      display: block;
      grid-column: span 2;
-     
 }
+ 
+  .user-css .codeblock {
+    background-color: #111111;
+    color: #644b83;
+    border: none;
+    border-radius: 1em;
+    padding: 1em;
+    font-size: 24px;
+    box-shadow: 5px 5px 2px #04050475;
+}
+
+ .user-css .bevel {
+     background-color: #5d5f60;
+     border: .25em inset #7d7f76; 
+     padding: 1em;
+     box-shadow: 5px 5px 2px #04050475;
+   }
+
+
+.user-css .context {
+      margin: 0.5em;
+      padding: 0.5em;
+      border-radius: 15px 15px 15px 15px;
+      box-shadow: 2px 2px 2px #04050475 inset, 
+            5px 5px 2px #04050475;
+     word-wrap: break-word;
+     display: block;
+}
+
+.user-css .panel-greatgm{
+       background: var(--Fordave-dark);
+       border: 4px var(--Fordave-light) solid;
+       padding: 10px;
+       border-radius: 0px 15px 0px 15px;
+       box-shadow: 2px 2px 2px #04050475 inset, 
+            5px 5px 2px #04050475;
+       color: var(--TextColor);
+}
+
+
+/*CONTAIENR COLORS*/
 
  .user-css .card-ceie {
       background: #1d0e2495;
@@ -1099,7 +1070,7 @@ url(https://www.worldanvil.com/uploads/images/5c13936d953b575e3b8fb252969c42a4.w
       border: 3px solid #0047ab;
    }
 
-     /*PHRASE KEYS*/
+     /*PHRASE KEYS & EMBLESHMENTS*/
 
 .user-css .cards .phrase-key, .box-contain .phrase-key{
      background: #04050450;
@@ -1155,6 +1126,42 @@ url(https://www.worldanvil.com/uploads/images/5c13936d953b575e3b8fb252969c42a4.w
  left: 0.25em;
  top: 0.25em;
 }
+
+.user-css .box-paperclip {
+  position: relative;
+}
+
+.user-css .wax-seal {
+  position: relative;
+}
+
+.user-css .box-paperclip .paper::before {
+content: 
+url(https://www.worldanvil.com/uploads/images/d5e13ed61a97ade0d9f9a242602da9fd.webp);
+      transform: scale(0.09);
+      position: absolute;
+      top: -25.8rem;
+      left: -10rem;
+}
+
+.user-css .box-paperclip blockquote::before {
+content: 
+url(https://www.worldanvil.com/uploads/images/d5e13ed61a97ade0d9f9a242602da9fd.webp);
+      transform: scale(0.09);
+      position: absolute;
+      top: -26.7rem;
+      right: 0px;
+}
+
+.user-css .wax-seal .paper::before {
+content: 
+url(https://www.worldanvil.com/uploads/images/5c13936d953b575e3b8fb252969c42a4.webp);
+      transform: scale(0.04);
+      position: absolute;
+      top: -50rem;
+      left: -55rem;
+}
+
 
  
   /* Timeline */
